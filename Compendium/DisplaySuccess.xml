@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CompendiumArticle>
+  <Name>DisplaySuccess</Name>
+ <Element>
+  <ElementName>new BackgroundImage</ElementName>
+  <Type>BackgroundElement</Type>
+  <X>0</X>
+  <Y>0</Y>
+  <Z>0</Z>
+ <Width>300</Width>
+ <Height>150</Height>
+ <GumpId>9270</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Html</ElementName>
+  <Type>HtmlElement</Type>
+  <X>13</X>
+  <Y>63</Y>
+  <Z>1</Z>
+ <Text>Removed Lokai&#39;s Active Quest: AllsWellThatEndsWell</Text>
+ <Width>274</Width>
+ <Height>74</Height>
+ <Background>True</Background>
+ <Scrollbar>False</Scrollbar>
+ </Element>
+ <Element>
+  <ElementName>new Button</ElementName>
+  <Type>ButtonElement</Type>
+  <X>114</X>
+  <Y>26</Y>
+  <Z>2</Z>
+ <GumpLink></GumpLink>
+ <PressedId>248</PressedId>
+ <NormalId>247</NormalId>
+ </Element>
+ <Element>
+  <ElementName>new Label</ElementName>
+  <Type>LabelElement</Type>
+  <X>23</X>
+  <Y>23</Y>
+  <Z>3</Z>
+ <Hue>1220</Hue>
+ <Text>Success!</Text>
+ </Element>
+</CompendiumArticle>

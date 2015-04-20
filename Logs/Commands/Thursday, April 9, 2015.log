@@ -1,0 +1,95 @@
+##############################
+Log started on 4/9/2015 12:18:32 PM
+
+##############################
+Log started on 4/9/2015 12:48:13 PM
+
+##############################
+Log started on 4/9/2015 12:51:23 PM
+
+4/9/2015 12:53:40 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'editpage tree'
+##############################
+Log started on 4/9/2015 1:05:05 PM
+
+4/9/2015 1:05:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'editpage tree'
+##############################
+Log started on 4/9/2015 1:50:47 PM
+
+4/9/2015 2:02:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'editpage tree'
+##############################
+Log started on 4/9/2015 2:10:52 PM
+
+##############################
+Log started on 4/9/2015 2:13:21 PM
+
+##############################
+Log started on 4/9/2015 2:18:39 PM
+
+4/9/2015 2:20:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'set hue 145'
+4/9/2015 2:20:41 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'hue' of 0x1 "Lokai" ('Lokai') to '145'
+##############################
+Log started on 4/9/2015 2:23:36 PM
+
+##############################
+Log started on 4/9/2015 2:33:08 PM
+
+4/9/2015 2:36:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get race'
+4/9/2015 2:36:45 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get race,name'
+4/9/2015 2:36:53 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get race.Name'
+4/9/2015 2:37:14 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/9/2015 2:37:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/9/2015 2:43:43 PM: 192.168.1.122: Owner 0x2 "Lex" ('Lokai') used command 'add treeharvesttool'
+4/9/2015 2:43:44 PM: 192.168.1.122: Owner 0x2 "Lex" ('Lokai') building at (3499, 2576, 14) in Trammel: "treeharvesttool"
+4/9/2015 2:43:44 PM: 192.168.1.122: Serials: 0x40000055; 
+4/9/2015 2:44:17 PM: 192.168.1.122: Owner 0x2 "Lex" ('Lokai') used command 'set hue 145'
+4/9/2015 2:44:23 PM: 192.168.1.122: Owner 0x2 "Lex" ('Lokai') set property 'hue' of 0x2 "Lex" ('Lokai') to '145'
+4/9/2015 2:45:06 PM: 192.168.1.122: Owner 0x2 "Lex" ('Lokai') used command 'props '
+4/9/2015 2:45:30 PM: 192.168.1.122: Owner 0x2 "Lex" ('Lokai') set property 'Hue' of 0x2 "Lex" ('Lokai') to '997'
+##############################
+Log started on 4/9/2015 2:47:47 PM
+
+4/9/2015 2:48:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get hue'
+##############################
+Log started on 4/9/2015 4:18:45 PM
+
+4/9/2015 4:19:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+4/9/2015 4:19:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000003D (ShardTravelMap)
+4/9/2015 4:19:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add shardtravelmap'
+4/9/2015 4:19:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (538, 993, 0) in Trammel: "shardtravelmap"
+4/9/2015 4:19:09 PM: 192.168.1.122: Serials: 0x40000056; 
+4/9/2015 4:19:49 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+##############################
+Log started on 4/9/2015 5:42:44 PM
+
+##############################
+Log started on 4/9/2015 5:54:32 PM
+
+##############################
+Log started on 4/9/2015 6:26:20 PM
+
+4/9/2015 6:27:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+4/9/2015 6:27:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+4/9/2015 6:27:48 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+4/9/2015 6:27:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+##############################
+Log started on 4/9/2015 8:54:41 PM
+
+4/9/2015 8:56:45 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'go magincia'
+4/9/2015 8:57:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+4/9/2015 8:57:48 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'where '
+4/9/2015 8:58:18 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'where '
+4/9/2015 8:58:28 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'where '
+4/9/2015 8:58:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'where '
+##############################
+Log started on 4/9/2015 9:01:13 PM
+
+4/9/2015 9:01:43 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+4/9/2015 9:01:45 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000003D (ShardTravelMap)
+4/9/2015 9:01:56 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add shardtravelmap'
+4/9/2015 9:01:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3564, 2138, 31) in Felucca: "shardtravelmap"
+4/9/2015 9:01:57 PM: 192.168.1.122: Serials: 0x40000057; 
+4/9/2015 9:03:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'go honesty'
+4/9/2015 9:03:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'go 722 1366 0'
+4/9/2015 9:03:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'where '
+4/9/2015 9:05:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+4/9/2015 9:05:41 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000057 (ShardTravelMap)

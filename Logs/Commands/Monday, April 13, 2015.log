@@ -1,0 +1,315 @@
+##############################
+Log started on 4/13/2015 12:34:58 PM
+
+4/13/2015 12:37:48 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add treelo'
+4/13/2015 12:37:59 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'go '
+4/13/2015 12:38:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'set map tramell'
+4/13/2015 12:38:15 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'set map trammel'
+4/13/2015 12:38:16 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'map' of 0x1 "Lokai" ('Lokai') to 'Trammel'
+4/13/2015 12:38:21 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'go '
+4/13/2015 12:38:33 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5440, 1153, 0) in Trammel: "AppleTreeLog"
+4/13/2015 12:38:33 PM: 192.168.1.122: Serials: 0x40000078; 
+4/13/2015 12:38:40 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5441, 1152, 0) in Trammel: "AshTreeLog"
+4/13/2015 12:38:40 PM: 192.168.1.122: Serials: 0x40000079; 
+4/13/2015 12:38:42 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5442, 1151, 0) in Trammel: "BananaTreeLog"
+4/13/2015 12:38:42 PM: 192.168.1.122: Serials: 0x4000007A; 
+4/13/2015 12:38:46 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1150, 0) in Trammel: "BlackCherryTreeLog"
+4/13/2015 12:38:46 PM: 192.168.1.122: Serials: 0x4000007B; 
+4/13/2015 12:38:49 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1149, 0) in Trammel: "CassiaTreeLog"
+4/13/2015 12:38:49 PM: 192.168.1.122: Serials: 0x4000007C; 
+4/13/2015 12:38:52 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1148, 0) in Trammel: "CedarTreeLog"
+4/13/2015 12:38:52 PM: 192.168.1.122: Serials: 0x4000007D; 
+4/13/2015 12:38:55 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5441, 1154, 0) in Trammel: "CherryTreeLog"
+4/13/2015 12:38:55 PM: 192.168.1.122: Serials: 0x4000007E; 
+4/13/2015 12:38:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5442, 1153, 0) in Trammel: "CypressTreeLog"
+4/13/2015 12:38:58 PM: 192.168.1.122: Serials: 0x4000007F; 
+4/13/2015 12:39:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1152, 0) in Trammel: "DogwoodTreeLog"
+4/13/2015 12:39:01 PM: 192.168.1.122: Serials: 0x40000080; 
+4/13/2015 12:39:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1151, 0) in Trammel: "EucalyptusTreeLog"
+4/13/2015 12:39:06 PM: 192.168.1.122: Serials: 0x40000081; 
+4/13/2015 12:39:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1150, 0) in Trammel: "FigTreeLog"
+4/13/2015 12:39:08 PM: 192.168.1.122: Serials: 0x40000082; 
+4/13/2015 12:39:11 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1149, 0) in Trammel: "HickoryTreeLog"
+4/13/2015 12:39:11 PM: 192.168.1.122: Serials: 0x40000083; 
+4/13/2015 12:39:14 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1155, 0) in Trammel: "IronwoodTreeLog"
+4/13/2015 12:39:14 PM: 192.168.1.122: Serials: 0x40000084; 
+4/13/2015 12:39:28 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1154, 0) in Trammel: "MapleTreeLog"
+4/13/2015 12:39:28 PM: 192.168.1.122: Serials: 0x40000085; 
+4/13/2015 12:39:32 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1153, 0) in Trammel: "OakTreeLog"
+4/13/2015 12:39:32 PM: 192.168.1.122: Serials: 0x40000086; 
+4/13/2015 12:39:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1152, 0) in Trammel: "OhiiTreeLog"
+4/13/2015 12:39:34 PM: 192.168.1.122: Serials: 0x40000087; 
+4/13/2015 12:39:37 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1151, 0) in Trammel: "OliveTreeLog"
+4/13/2015 12:39:37 PM: 192.168.1.122: Serials: 0x40000088; 
+4/13/2015 12:39:46 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1150, 0) in Trammel: "PeachTreeLog"
+4/13/2015 12:39:46 PM: 192.168.1.122: Serials: 0x40000089; 
+4/13/2015 12:39:52 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1156, 0) in Trammel: "PearTreeLog"
+4/13/2015 12:39:52 PM: 192.168.1.122: Serials: 0x4000008A; 
+4/13/2015 12:39:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1155, 0) in Trammel: "PlumTreeLog"
+4/13/2015 12:39:57 PM: 192.168.1.122: Serials: 0x4000008B; 
+4/13/2015 12:39:59 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1154, 0) in Trammel: "PoplarTreeLog"
+4/13/2015 12:39:59 PM: 192.168.1.122: Serials: 0x4000008C; 
+4/13/2015 12:40:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1153, 0) in Trammel: "SandalwoodTreeLog"
+4/13/2015 12:40:02 PM: 192.168.1.122: Serials: 0x4000008D; 
+4/13/2015 12:40:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1152, 0) in Trammel: "SpiderTreeLog"
+4/13/2015 12:40:05 PM: 192.168.1.122: Serials: 0x4000008E; 
+4/13/2015 12:40:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5448, 1151, 0) in Trammel: "TuscanyPineTreeLog"
+4/13/2015 12:40:07 PM: 192.168.1.122: Serials: 0x4000008F; 
+4/13/2015 12:40:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1157, 0) in Trammel: "WalnutTreeLog"
+4/13/2015 12:40:10 PM: 192.168.1.122: Serials: 0x40000090; 
+4/13/2015 12:40:12 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1156, 0) in Trammel: "WhiteBeechTreeLog"
+4/13/2015 12:40:12 PM: 192.168.1.122: Serials: 0x40000091; 
+4/13/2015 12:40:14 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1155, 0) in Trammel: "WillowTreeLog"
+4/13/2015 12:40:14 PM: 192.168.1.122: Serials: 0x40000092; 
+4/13/2015 12:40:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1154, 0) in Trammel: "YewTreeLog"
+4/13/2015 12:40:17 PM: 192.168.1.122: Serials: 0x40000093; 
+4/13/2015 12:40:43 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 12:41:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '943'
+4/13/2015 12:41:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '919'
+4/13/2015 12:41:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '912'
+4/13/2015 12:41:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '875'
+4/13/2015 12:42:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '871'
+4/13/2015 12:42:15 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '767'
+4/13/2015 12:42:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '1022'
+4/13/2015 12:42:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '1000'
+4/13/2015 12:42:42 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '1001'
+4/13/2015 12:43:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '1029'
+4/13/2015 12:43:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000078 (AppleTreeLog) to '1026'
+4/13/2015 12:43:27 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 12:43:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x4000007B (BlackCherryTreeLog) to '1022'
+4/13/2015 12:43:48 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 12:43:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x4000007A (BananaTreeLog) to '788'
+4/13/2015 12:44:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x4000007A (BananaTreeLog) to '756'
+4/13/2015 12:44:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x4000007A (BananaTreeLog) to '772'
+4/13/2015 12:44:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'searchimage '
+4/13/2015 12:45:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building from (5437, 1152, 0) to (5451, 1154, 0) in Trammel: "static" "1173"
+4/13/2015 12:45:05 PM: 192.168.1.122: Serials: 0x40000094; 0x40000095; 0x40000096; 0x40000097; 0x40000098; 0x40000099; 0x4000009A; 0x4000009B; 0x4000009C; 0x4000009D; 0x4000009E; 0x4000009F; 0x400000A0; 0x400000A1; 0x400000A2; 0x400000A3; 0x400000A4; 0x400000A5; 0x400000A6; 0x400000A7; 0x400000A8; 0x400000A9; 0x400000AA; 0x400000AB; 0x400000AC; 0x400000AD; 0x400000AE; 0x400000AF; 0x400000B0; 0x400000B1; 0x400000B2; 0x400000B3; 0x400000B4; 0x400000B5; 0x400000B6; 0x400000B7; 0x400000B8; 0x400000B9; 0x400000BA; 0x400000BB; 0x400000BC; 0x400000BD; 0x400000BE; 0x400000BF; 0x400000C0; 
+4/13/2015 12:45:29 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building from (5437, 1146, 0) to (5447, 1151, 0) in Trammel: "static" "1173"
+4/13/2015 12:45:29 PM: 192.168.1.122: Serials: 0x400000C1; 0x400000C2; 0x400000C3; 0x400000C4; 0x400000C5; 0x400000C6; 0x400000C7; 0x400000C8; 0x400000C9; 0x400000CA; 0x400000CB; 0x400000CC; 0x400000CD; 0x400000CE; 0x400000CF; 0x400000D0; 0x400000D1; 0x400000D2; 0x400000D3; 0x400000D4; 0x400000D5; 0x400000D6; 0x400000D7; 0x400000D8; 0x400000D9; 0x400000DA; 0x400000DB; 0x400000DC; 0x400000DD; 0x400000DE; 0x400000DF; 0x400000E0; 0x400000E1; 0x400000E2; 0x400000E3; 0x400000E4; 0x400000E5; 0x400000E6; 0x400000E7; 0x400000E8; 0x400000E9; 0x400000EA; 0x400000EB; 0x400000EC; 0x400000ED; 0x400000EE; 0x400000EF; 0x400000F0; 0x400000F1; 0x400000F2; 0x400000F3; 0x400000F4; 0x400000F5; 0x400000F6; 0x400000F7; 0x400000F8; 0x400000F9; 0x400000FA; 0x400000FB; 0x400000FC; 0x400000FD; 0x400000FE; 0x400000FF; 0x40000100; 0x40000101; 0x40000102; 
+4/13/2015 12:45:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building from (5437, 1155, 0) to (5443, 1160, 0) in Trammel: "static" "1173"
+4/13/2015 12:45:41 PM: 192.168.1.122: Serials: 0x40000103; 0x40000104; 0x40000105; 0x40000106; 0x40000107; 0x40000108; 0x40000109; 0x4000010A; 0x4000010B; 0x4000010C; 0x4000010D; 0x4000010E; 0x4000010F; 0x40000110; 0x40000111; 0x40000112; 0x40000113; 0x40000114; 0x40000115; 0x40000116; 0x40000117; 0x40000118; 0x40000119; 0x4000011A; 0x4000011B; 0x4000011C; 0x4000011D; 0x4000011E; 0x4000011F; 0x40000120; 0x40000121; 0x40000122; 0x40000123; 0x40000124; 0x40000125; 0x40000126; 0x40000127; 0x40000128; 0x40000129; 0x4000012A; 0x4000012B; 0x4000012C; 
+4/13/2015 12:46:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building from (5444, 1155, 0) to (5451, 1160, 0) in Trammel: "static" "1173"
+4/13/2015 12:46:07 PM: 192.168.1.122: Serials: 0x4000012D; 0x4000012E; 0x4000012F; 0x40000130; 0x40000131; 0x40000132; 0x40000133; 0x40000134; 0x40000135; 0x40000136; 0x40000137; 0x40000138; 0x40000139; 0x4000013A; 0x4000013B; 0x4000013C; 0x4000013D; 0x4000013E; 0x4000013F; 0x40000140; 0x40000141; 0x40000142; 0x40000143; 0x40000144; 0x40000145; 0x40000146; 0x40000147; 0x40000148; 0x40000149; 0x4000014A; 0x4000014B; 0x4000014C; 0x4000014D; 0x4000014E; 0x4000014F; 0x40000150; 0x40000151; 0x40000152; 0x40000153; 0x40000154; 0x40000155; 0x40000156; 0x40000157; 0x40000158; 0x40000159; 0x4000015A; 0x4000015B; 0x4000015C; 
+4/13/2015 12:46:15 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building from (5448, 1146, 0) to (5451, 1151, 0) in Trammel: "static" "1173"
+4/13/2015 12:46:15 PM: 192.168.1.122: Serials: 0x4000015D; 0x4000015E; 0x4000015F; 0x40000160; 0x40000161; 0x40000162; 0x40000163; 0x40000164; 0x40000165; 0x40000166; 0x40000167; 0x40000168; 0x40000169; 0x4000016A; 0x4000016B; 0x4000016C; 0x4000016D; 0x4000016E; 0x4000016F; 0x40000170; 0x40000171; 0x40000172; 0x40000173; 0x40000174; 
+4/13/2015 12:46:33 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 12:47:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x40000079 (AshTreeLog) to '865'
+4/13/2015 12:47:15 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 12:47:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x4000007C (CassiaTreeLog) to '708'
+4/13/2015 12:47:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 12:47:44 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x4000007D (CedarTreeLog) to '802'
+4/13/2015 12:47:48 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 12:48:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x4000007E (CherryTreeLog) to '1020'
+4/13/2015 12:48:12 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 12:48:16 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 12:50:12 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+##############################
+Log started on 4/13/2015 4:03:25 PM
+
+4/13/2015 4:04:16 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'm remove'
+4/13/2015 4:04:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000007F (CypressTreeLog)
+4/13/2015 4:04:20 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000080 (DogwoodTreeLog)
+4/13/2015 4:04:21 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000081 (EucalyptusTreeLog)
+4/13/2015 4:04:22 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000082 (FigTreeLog)
+4/13/2015 4:04:23 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000083 (HickoryTreeLog)
+4/13/2015 4:04:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000089 (PeachTreeLog)
+4/13/2015 4:04:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000088 (OliveTreeLog)
+4/13/2015 4:04:27 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000087 (OhiiTreeLog)
+4/13/2015 4:04:28 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000086 (OakTreeLog)
+4/13/2015 4:04:28 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000085 (MapleTreeLog)
+4/13/2015 4:04:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000084 (IronwoodTreeLog)
+4/13/2015 4:04:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000008A (PearTreeLog)
+4/13/2015 4:04:32 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000008B (PlumTreeLog)
+4/13/2015 4:04:32 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000008C (PoplarTreeLog)
+4/13/2015 4:04:33 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000008D (SandalwoodTreeLog)
+4/13/2015 4:04:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000008E (SpiderTreeLog)
+4/13/2015 4:04:35 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000008F (TuscanyPineTreeLog)
+4/13/2015 4:04:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000090 (WalnutTreeLog)
+4/13/2015 4:04:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000091 (WhiteBeechTreeLog)
+4/13/2015 4:04:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000092 (WillowTreeLog)
+4/13/2015 4:04:40 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000093 (YewTreeLog)
+4/13/2015 4:04:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add treelo'
+4/13/2015 4:05:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5442, 1153, 0) in Trammel: "CypressTreeLog"
+4/13/2015 4:05:03 PM: 192.168.1.122: Serials: 0x4000006D; 
+4/13/2015 4:05:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1152, 0) in Trammel: "DogwoodTreeLog"
+4/13/2015 4:05:10 PM: 192.168.1.122: Serials: 0x4000006E; 
+4/13/2015 4:05:13 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1151, 0) in Trammel: "EucalyptusTreeLog"
+4/13/2015 4:05:13 PM: 192.168.1.122: Serials: 0x40000070; 
+4/13/2015 4:05:16 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1150, 0) in Trammel: "FigTreeLog"
+4/13/2015 4:05:16 PM: 192.168.1.122: Serials: 0x40000071; 
+4/13/2015 4:05:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1149, 0) in Trammel: "HickoryTreeLog"
+4/13/2015 4:05:19 PM: 192.168.1.122: Serials: 0x40000072; 
+4/13/2015 4:05:22 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5442, 1155, 0) in Trammel: "IronwoodTreeLog"
+4/13/2015 4:05:22 PM: 192.168.1.122: Serials: 0x40000073; 
+4/13/2015 4:05:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1154, 0) in Trammel: "MapleTreeLog"
+4/13/2015 4:05:25 PM: 192.168.1.122: Serials: 0x40000074; 
+4/13/2015 4:05:28 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1153, 0) in Trammel: "OakTreeLog"
+4/13/2015 4:05:28 PM: 192.168.1.122: Serials: 0x40000075; 
+4/13/2015 4:05:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1152, 0) in Trammel: "OhiiTreeLog"
+4/13/2015 4:05:31 PM: 192.168.1.122: Serials: 0x40000076; 
+4/13/2015 4:05:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1151, 0) in Trammel: "OliveTreeLog"
+4/13/2015 4:05:34 PM: 192.168.1.122: Serials: 0x4000007F; 
+4/13/2015 4:05:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1150, 0) in Trammel: "PeachTreeLog"
+4/13/2015 4:05:36 PM: 192.168.1.122: Serials: 0x40000080; 
+4/13/2015 4:05:41 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1156, 0) in Trammel: "PearTreeLog"
+4/13/2015 4:05:41 PM: 192.168.1.122: Serials: 0x40000081; 
+4/13/2015 4:05:44 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1155, 0) in Trammel: "PlumTreeLog"
+4/13/2015 4:05:44 PM: 192.168.1.122: Serials: 0x40000082; 
+4/13/2015 4:05:46 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1154, 0) in Trammel: "PoplarTreeLog"
+4/13/2015 4:05:46 PM: 192.168.1.122: Serials: 0x40000083; 
+4/13/2015 4:05:49 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1153, 0) in Trammel: "SandalwoodTreeLog"
+4/13/2015 4:05:49 PM: 192.168.1.122: Serials: 0x40000084; 
+4/13/2015 4:05:52 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1152, 0) in Trammel: "SpiderTreeLog"
+4/13/2015 4:05:52 PM: 192.168.1.122: Serials: 0x40000085; 
+4/13/2015 4:05:55 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5448, 1151, 0) in Trammel: "TuscanyPineTreeLog"
+4/13/2015 4:05:55 PM: 192.168.1.122: Serials: 0x40000086; 
+4/13/2015 4:05:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1157, 0) in Trammel: "WalnutTreeLog"
+4/13/2015 4:05:58 PM: 192.168.1.122: Serials: 0x40000087; 
+4/13/2015 4:06:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1156, 0) in Trammel: "WhiteBeechTreeLog"
+4/13/2015 4:06:01 PM: 192.168.1.122: Serials: 0x40000088; 
+4/13/2015 4:06:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1155, 0) in Trammel: "WillowTreeLog"
+4/13/2015 4:06:03 PM: 192.168.1.122: Serials: 0x40000089; 
+4/13/2015 4:06:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1154, 0) in Trammel: "YewTreeLog"
+4/13/2015 4:06:06 PM: 192.168.1.122: Serials: 0x4000008A; 
+4/13/2015 4:06:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:13 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:24 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:27 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:43 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:46 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:06:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:07:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add treelo'
+4/13/2015 4:07:12 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1149, 0) in Trammel: "BlackOakTreeLog"
+4/13/2015 4:07:12 PM: 192.168.1.122: Serials: 0x4000008B; 
+4/13/2015 4:07:15 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:07:18 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/13/2015 4:08:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+4/13/2015 4:15:29 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+4/13/2015 4:17:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add yucc'
+4/13/2015 4:17:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1156, 0) in Trammel: "YuccaPlantLog"
+4/13/2015 4:17:06 PM: 192.168.1.122: Serials: 0x40000183; 
+##############################
+Log started on 4/13/2015 4:34:02 PM
+
+4/13/2015 4:34:30 PM: 192.168.1.122: Awaiting confirmation...
+4/13/2015 4:34:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'global delete where customtreelog'
+4/13/2015 4:34:33 PM: 192.168.1.122: Delete command confirmed.
+4/13/2015 4:34:33 PM: 192.168.1.122: The item has been deleted. (22)
+##############################
+Log started on 4/13/2015 4:35:42 PM
+
+4/13/2015 4:35:53 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'go '
+4/13/2015 4:36:12 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add treehatchet'
+4/13/2015 4:36:13 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (2493, 416, 15) in Trammel: "treehatchet"
+4/13/2015 4:36:13 PM: 192.168.1.122: Serials: 0x40000070; 
+##############################
+Log started on 4/13/2015 4:51:33 PM
+
+4/13/2015 4:51:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add treelo'
+4/13/2015 4:51:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1151, 0) in Trammel: "AppleTreeLog"
+4/13/2015 4:51:57 PM: 192.168.1.122: Serials: 0x40000070; 
+4/13/2015 4:52:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1152, 0) in Trammel: "AshTreeLog"
+4/13/2015 4:52:01 PM: 192.168.1.122: Serials: 0x40000071; 
+4/13/2015 4:52:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1151, 0) in Trammel: "BlackCherryTreeLog"
+4/13/2015 4:52:05 PM: 192.168.1.122: Serials: 0x40000072; 
+4/13/2015 4:52:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1150, 0) in Trammel: "CedarTreeLog"
+4/13/2015 4:52:08 PM: 192.168.1.122: Serials: 0x40000073; 
+4/13/2015 4:52:12 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1152, 0) in Trammel: "CypressTreeLog"
+4/13/2015 4:52:12 PM: 192.168.1.122: Serials: 0x40000074; 
+4/13/2015 4:52:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1151, 0) in Trammel: "HickoryTreeLog"
+4/13/2015 4:52:17 PM: 192.168.1.122: Serials: 0x40000075; 
+4/13/2015 4:52:20 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1152, 0) in Trammel: "MapleTreeLog"
+4/13/2015 4:52:20 PM: 192.168.1.122: Serials: 0x40000076; 
+4/13/2015 4:52:23 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1150, 0) in Trammel: "OakTreeLog"
+4/13/2015 4:52:23 PM: 192.168.1.122: Serials: 0x40000077; 
+4/13/2015 4:52:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1153, 0) in Trammel: "OliveTreeLog"
+4/13/2015 4:52:26 PM: 192.168.1.122: Serials: 0x40000078; 
+4/13/2015 4:52:29 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5445, 1153, 0) in Trammel: "PeachTreeLog"
+4/13/2015 4:52:29 PM: 192.168.1.122: Serials: 0x40000079; 
+4/13/2015 4:52:33 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5446, 1153, 0) in Trammel: "IronwoodTreeLog"
+4/13/2015 4:52:33 PM: 192.168.1.122: Serials: 0x4000007A; 
+4/13/2015 4:52:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1150, 0) in Trammel: "FigTreeLog"
+4/13/2015 4:52:36 PM: 192.168.1.122: Serials: 0x4000007B; 
+4/13/2015 4:52:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5444, 1150, 0) in Trammel: "EucalyptusTreeLog"
+4/13/2015 4:52:39 PM: 192.168.1.122: Serials: 0x4000007C; 
+4/13/2015 4:52:45 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1151, 0) in Trammel: "PlumTreeLog"
+4/13/2015 4:52:45 PM: 192.168.1.122: Serials: 0x4000007D; 
+4/13/2015 4:52:48 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1152, 0) in Trammel: "PoplarTreeLog"
+4/13/2015 4:52:48 PM: 192.168.1.122: Serials: 0x4000007E; 
+4/13/2015 4:52:50 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5447, 1153, 0) in Trammel: "SandalwoodTreeLog"
+4/13/2015 4:52:50 PM: 192.168.1.122: Serials: 0x4000007F; 
+4/13/2015 4:52:53 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5448, 1150, 0) in Trammel: "SpiderTreeLog"
+4/13/2015 4:52:53 PM: 192.168.1.122: Serials: 0x40000080; 
+4/13/2015 4:52:56 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5448, 1151, 0) in Trammel: "TuscanyPineTreeLog"
+4/13/2015 4:52:56 PM: 192.168.1.122: Serials: 0x40000081; 
+4/13/2015 4:52:59 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5448, 1152, 0) in Trammel: "WalnutTreeLog"
+4/13/2015 4:52:59 PM: 192.168.1.122: Serials: 0x40000082; 
+4/13/2015 4:53:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5448, 1153, 0) in Trammel: "WhiteBeechTreeLog"
+4/13/2015 4:53:02 PM: 192.168.1.122: Serials: 0x40000083; 
+4/13/2015 4:53:04 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5449, 1150, 0) in Trammel: "WillowTreeLog"
+4/13/2015 4:53:04 PM: 192.168.1.122: Serials: 0x40000084; 
+4/13/2015 4:53:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5449, 1151, 0) in Trammel: "YewTreeLog"
+4/13/2015 4:53:07 PM: 192.168.1.122: Serials: 0x40000085; 
+4/13/2015 4:53:21 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5449, 1152, 0) in Trammel: "YuccaPlantLog"
+4/13/2015 4:53:21 PM: 192.168.1.122: Serials: 0x40000086; 
+4/13/2015 4:53:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5449, 1153, 0) in Trammel: "AppleTreeLog"
+4/13/2015 4:53:34 PM: 192.168.1.122: Serials: 0x40000087; 
+4/13/2015 4:53:41 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+##############################
+Log started on 4/13/2015 5:39:41 PM
+
+4/13/2015 5:40:13 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add froe'
+4/13/2015 5:40:14 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5440, 1156, 0) in Trammel: "froe"
+4/13/2015 5:40:14 PM: 192.168.1.122: Serials: 0x40000089; 
+4/13/2015 5:40:27 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add treehatchet'
+4/13/2015 5:40:29 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (5443, 1156, 0) in Trammel: "treehatchet"
+4/13/2015 5:40:29 PM: 192.168.1.122: Serials: 0x4000008A; 
+4/13/2015 5:40:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'skills '
+4/13/2015 5:40:59 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property '[Carpentry: 67].Base' of 0x1 "Lokai" ('Lokai') to '67'
+4/13/2015 5:41:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property '[Lumberjacking: 78].Base' of 0x1 "Lokai" ('Lokai') to '78'
+4/13/2015 5:41:20 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'go '
+4/13/2015 5:41:33 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'save '
+4/13/2015 5:43:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add oaktreelo'
+4/13/2015 5:43:40 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4702, 1136, 0) in Trammel: "BlackOakTreeLog"
+4/13/2015 5:43:40 PM: 192.168.1.122: Serials: 0x40000093; 
+4/13/2015 5:43:53 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4702, 1136, 0) in Trammel: "BananaTreeLog"
+4/13/2015 5:43:53 PM: 192.168.1.122: Serials: 0x40000175; 
+4/13/2015 5:43:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4702, 1137, 0) in Trammel: "BlackCherryTreeLog"
+4/13/2015 5:43:57 PM: 192.168.1.122: Serials: 0x40000176; 
+4/13/2015 5:44:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4702, 1135, 0) in Trammel: "CedarTreeLog"
+4/13/2015 5:44:01 PM: 192.168.1.122: Serials: 0x40000177; 
+4/13/2015 5:44:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4703, 1136, 0) in Trammel: "AshTreeLog"
+4/13/2015 5:44:05 PM: 192.168.1.122: Serials: 0x40000178; 
+4/13/2015 5:44:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4703, 1135, 0) in Trammel: "CypressTreeLog"
+4/13/2015 5:44:09 PM: 192.168.1.122: Serials: 0x40000179; 
+4/13/2015 5:44:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'm set amount 50'
+4/13/2015 5:44:33 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'amount' of 0x40000093 (BlackOakTreeLog) to '50'
+4/13/2015 5:44:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'amount' of 0x40000178 (AshTreeLog) to '50'
+4/13/2015 5:44:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'amount' of 0x40000175 (BananaTreeLog) to '50'
+4/13/2015 5:44:41 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'amount' of 0x40000177 (CedarTreeLog) to '50'
+4/13/2015 5:44:44 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'amount' of 0x40000179 (CypressTreeLog) to '50'
+4/13/2015 5:44:49 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'amount' of 0x40000176 (BlackCherryTreeLog) to '50'
+4/13/2015 5:46:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add axe'
+4/13/2015 5:46:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4704, 1136, 0) in Trammel: "axe"
+4/13/2015 5:46:03 PM: 192.168.1.122: Serials: 0x4000017A; 
+4/13/2015 5:46:42 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add knife'
+4/13/2015 5:46:44 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4704, 1136, 0) in Trammel: "knife"
+4/13/2015 5:46:44 PM: 192.168.1.122: Serials: 0x4000017B; 
+##############################
+Log started on 4/13/2015 5:54:10 PM
+
+##############################
+Log started on 4/13/2015 6:07:34 PM
+
+4/13/2015 6:09:02 PM: 192.168.1.122: Crafting 0x40000178 (Stool) with craft system DefCarpentry
+4/13/2015 6:09:16 PM: 192.168.1.122: Crafting 0x40000179 (BambooChair) with craft system DefCarpentry
+4/13/2015 6:09:19 PM: 192.168.1.122: Crafting 0x4000017C (WoodenChair) with craft system DefCarpentry
+4/13/2015 6:09:22 PM: 192.168.1.122: Crafting 0x4000017D (WoodenChairCushion) with craft system DefCarpentry
+##############################
+Log started on 4/13/2015 7:06:03 PM
+
+4/13/2015 7:06:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'

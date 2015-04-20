@@ -1,0 +1,67 @@
+##############################
+Log started on 4/16/2015 6:37:12 PM
+
+4/16/2015 6:37:29 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'qc '
+##############################
+Log started on 4/16/2015 6:42:41 PM
+
+4/16/2015 6:42:54 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'go '
+4/16/2015 6:43:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'helpinfo '
+4/16/2015 6:43:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'createworld '
+4/16/2015 6:43:55 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'moongen '
+4/16/2015 6:44:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'doorgen '
+4/16/2015 6:44:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'decorate '
+4/16/2015 6:44:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'signgen '
+4/16/2015 6:44:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'telgen '
+4/16/2015 6:44:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'shtelgen '
+4/16/2015 6:44:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'secretlocgen '
+4/16/2015 6:44:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'decorateml '
+4/16/2015 6:44:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'decoratesa '
+4/16/2015 6:45:46 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'xmlload Spawns/Trammel'
+4/16/2015 6:46:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'qc '
+##############################
+Log started on 4/16/2015 6:47:01 PM
+
+##############################
+Log started on 4/16/2015 7:00:16 PM
+
+4/16/2015 7:00:45 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'createworld '
+4/16/2015 7:03:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'moongen '
+4/16/2015 7:04:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'doorgen '
+4/16/2015 7:04:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'decorate '
+4/16/2015 7:04:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'signgen '
+4/16/2015 7:04:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'telgen '
+4/16/2015 7:04:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'secretlocgen '
+4/16/2015 7:04:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'generatefactions '
+4/16/2015 7:04:46 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'xmlload spawns/trammel'
+4/16/2015 7:05:59 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'createworld '
+4/16/2015 7:06:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'moongen '
+4/16/2015 7:06:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'doorgen '
+4/16/2015 7:06:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'decorate '
+4/16/2015 7:06:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'signgen '
+4/16/2015 7:06:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'telgen '
+4/16/2015 7:06:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'decorateml '
+4/16/2015 7:06:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'decoratesa '
+4/16/2015 7:06:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'generatefactions '
+4/16/2015 7:06:28 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'save '
+4/16/2015 7:06:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'qc '
+##############################
+Log started on 4/16/2015 7:09:40 PM
+
+4/16/2015 7:11:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'qc '
+4/16/2015 7:11:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'qc '
+##############################
+Log started on 4/16/2015 7:50:42 PM
+
+4/16/2015 7:50:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'qc '
+##############################
+Log started on 4/16/2015 7:59:34 PM
+
+4/16/2015 8:00:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'qc '
+##############################
+Log started on 4/16/2015 8:04:12 PM
+
+##############################
+Log started on 4/16/2015 8:44:06 PM
+
+4/16/2015 8:48:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'qc '

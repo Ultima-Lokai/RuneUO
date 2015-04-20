@@ -1,0 +1,42 @@
+##############################
+Log started on 4/15/2015 3:03:38 PM
+
+##############################
+Log started on 4/15/2015 4:38:39 PM
+
+4/15/2015 4:38:52 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add travelma'
+4/15/2015 4:39:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4706, 1136, 0) in Trammel: "FeluccaTravelMap"
+4/15/2015 4:39:02 PM: 192.168.1.122: Serials: 0x40000072; 
+4/15/2015 4:39:14 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4706, 1135, 0) in Trammel: "FeluccaTravelMapPiece"
+4/15/2015 4:39:14 PM: 192.168.1.122: Serials: 0x40000073; 
+4/15/2015 4:39:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4707, 1135, 0) in Trammel: "FeluccaTravelMapPiece"
+4/15/2015 4:39:17 PM: 192.168.1.122: Serials: 0x40000074; 
+4/15/2015 4:39:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4707, 1134, 0) in Trammel: "IlshenarTravelMap"
+4/15/2015 4:39:26 PM: 192.168.1.122: Serials: 0x40000075; 
+4/15/2015 4:39:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4708, 1134, 0) in Trammel: "IlshenarTravelMapPiece"
+4/15/2015 4:39:30 PM: 192.168.1.122: Serials: 0x40000076; 
+4/15/2015 4:39:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4708, 1133, 0) in Trammel: "IlshenarTravelMapPiece"
+4/15/2015 4:39:31 PM: 192.168.1.122: Serials: 0x40000077; 
+4/15/2015 4:39:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4709, 1137, 0) in Trammel: "MalasTravelMap"
+4/15/2015 4:39:36 PM: 192.168.1.122: Serials: 0x40000078; 
+4/15/2015 4:39:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4709, 1136, 0) in Trammel: "MalasTravelMapPiece"
+4/15/2015 4:39:39 PM: 192.168.1.122: Serials: 0x40000079; 
+4/15/2015 4:39:48 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4706, 1133, 0) in Trammel: "TerMurTravelMap"
+4/15/2015 4:39:48 PM: 192.168.1.122: Serials: 0x4000007A; 
+4/15/2015 4:39:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4706, 1132, 0) in Trammel: "TerMurTravelMapPiece"
+4/15/2015 4:39:51 PM: 192.168.1.122: Serials: 0x4000007B; 
+4/15/2015 4:39:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4707, 1132, 0) in Trammel: "TokunoTravelMap"
+4/15/2015 4:39:57 PM: 192.168.1.122: Serials: 0x4000007C; 
+4/15/2015 4:40:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4707, 1131, 0) in Trammel: "TokunoTravelMapPiece"
+4/15/2015 4:40:00 PM: 192.168.1.122: Serials: 0x4000007D; 
+4/15/2015 4:40:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4708, 1132, 0) in Trammel: "TrammelTravelMap"
+4/15/2015 4:40:03 PM: 192.168.1.122: Serials: 0x4000007E; 
+4/15/2015 4:40:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4708, 1131, 0) in Trammel: "TrammelTravelMapPiece"
+4/15/2015 4:40:06 PM: 192.168.1.122: Serials: 0x4000007F; 
+4/15/2015 4:41:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'aDD bag'
+4/15/2015 4:41:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (4709, 1136, 0) in Trammel: "bag"
+4/15/2015 4:41:02 PM: 192.168.1.122: Serials: 0x40000080; 
+4/15/2015 4:42:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'where '
+4/15/2015 4:45:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add feluccama'
+4/15/2015 4:46:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (1434, 1699, 2) in Felucca: "FeluccaTravelMapPiece"
+4/15/2015 4:46:07 PM: 192.168.1.122: Serials: 0x40000081; 
