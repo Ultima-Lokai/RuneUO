@@ -15,7 +15,6 @@
  ***************************************************************************/
 
 using System;
-using System.Diagnostics;
 using Server.Commands;
 using Server.Targeting;
 using Server.Gumps;

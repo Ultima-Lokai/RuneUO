@@ -41,3 +41,29 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+Backups/Automatic/Most Recent (23-4-2015 19-26-40)/Accounts/accounts.xml
+*.bin
+*.ima
+*.tdb
+*.idx
+*.fpi
+Backups/Automatic/Most Recent (23-4-2015 19-26-40)/Staff Runebook/Rune Accounts.xml
+Backups/Automatic/Third Backup (23-4-2015 18-52-06)/Accounts/accounts.xml
+Backups/Automatic/Second Backup (23-4-2015 19-03-59)/Accounts/accounts.xml
+Backups/Automatic/Third Backup (23-4-2015 19-01-19)/Staff Runebook/Rune Accounts.xml
+Backups/Automatic/Second Backup (23-4-2015 19-03-59)/Staff Runebook/Rune Accounts.xml
+Backups/Automatic/Third Backup (23-4-2015 18-52-06)/Staff Runebook/Rune Accounts.xml
+Backups/Automatic/Third Backup (23-4-2015 19-01-19)/Accounts/accounts.xml
+Backups/Crashed/21-4-2015-15-47-55/Accounts/Accounts.xml
+Backups/Crashed/21-4-2015-15-52-21/Accounts/Accounts.xml
+*.log
+Logs/Commands/Owner/Lokai.log
+Backups/Crashed/21-4-2015-15-59-22/Accounts/Accounts.xml
+Backups/Crashed/21-4-2015-18-18-42/Accounts/Accounts.xml
+Backups/Crashed/23-4-2015-18-25-14/Accounts/Accounts.xml
+Backups/Crashed/22-4-2015-20-54-52/Accounts/Accounts.xml
+*.cache
+Scripts/Output/Scripts.CS.dll
+*.hash
+Scripts/Output/Scripts.CS.hash
+Scripts/Output/Scripts.CS.dll

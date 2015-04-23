@@ -1,5 +1,7 @@
 ﻿
 
+using Server.Factions;
+
 namespace Server.Custom
 {
     public enum ChristianVirtues

@@ -1419,7 +1419,6 @@
     <Compile Include="Custom Systems\Mine\CustomGump.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\BlacksmithMachine.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\QuestClean.cs" />
-    <Compile Include="Custom Systems\Mine\Mannequin\MannequinDeed.cs" />
     <Compile Include="Custom Systems\Mine\Mannequin\Mannequin.cs" />
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\FeluccaTravelMap.cs" />
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\IlshenarTravelMap.cs" />

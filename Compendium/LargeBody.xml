@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CompendiumArticle>
+  <Name>LargeBody</Name>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>240</X>
+  <Y>18</Y>
+  <Z>1</Z>
+ <Hue>0</Hue>
+ <GumpId>1800</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>240</X>
+  <Y>18</Y>
+  <Z>2</Z>
+ <Hue>0</Hue>
+ <GumpId>1889</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new BackgroundImage</ElementName>
+  <Type>BackgroundElement</Type>
+  <X>0</X>
+  <Y>0</Y>
+  <Z>0</Z>
+ <Width>500</Width>
+ <Height>400</Height>
+ <GumpId>3600</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Label</ElementName>
+  <Type>LabelElement</Type>
+  <X>146</X>
+  <Y>13</Y>
+  <Z>3</Z>
+ <Hue>1153</Hue>
+ <Text>Mannequin Customization Menu</Text>
+ </Element>
+</CompendiumArticle>

@@ -8,7 +8,7 @@
   <Y>0</Y>
   <Z>0</Z>
  <Width>760</Width>
- <Height>480</Height>
+ <Height>800</Height>
  <GumpId>9200</GumpId>
  </Element>
  <Element>
@@ -23,8 +23,8 @@
  <Element>
   <ElementName>Body</ElementName>
   <Type>ImageElement</Type>
-  <X>10</X>
-  <Y>80</Y>
+  <X>170</X>
+  <Y>400</Y>
   <Z>2</Z>
  <Hue>0</Hue>
  <GumpId>12</GumpId>
@@ -105,5 +105,14 @@
   <Z>10</Z>
  <Hue>1152</Hue>
  <Text>Human</Text>
+ </Element>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>10</X>
+  <Y>400</Y>
+  <Z>11</Z>
+ <Hue>0</Hue>
+ <GumpId>5030</GumpId>
  </Element>
 </CompendiumArticle>

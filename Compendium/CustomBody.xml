@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CompendiumArticle>
+  <Name>CustomBody</Name>
+ <Element>
+  <ElementName>new BackgroundImage</ElementName>
+  <Type>BackgroundElement</Type>
+  <X>30</X>
+  <Y>40</Y>
+  <Z>0</Z>
+ <Width>585</Width>
+ <Height>410</Height>
+ <GumpId>9250</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>70</X>
+  <Y>90</Y>
+  <Z>1</Z>
+ <Hue>0</Hue>
+ <GumpId>5030</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>110</X>
+  <Y>202</Y>
+  <Z>2</Z>
+ <Hue>0</Hue>
+ <GumpId>5031</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>425</X>
+  <Y>202</Y>
+  <Z>3</Z>
+ <Hue>0</Hue>
+ <GumpId>5031</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>110</X>
+  <Y>256</Y>
+  <Z>4</Z>
+ <Hue>0</Hue>
+ <GumpId>5031</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>425</X>
+  <Y>256</Y>
+  <Z>5</Z>
+ <Hue>0</Hue>
+ <GumpId>5031</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Button</ElementName>
+  <Type>ButtonElement</Type>
+  <X>111</X>
+  <Y>258</Y>
+  <Z>6</Z>
+ <GumpLink></GumpLink>
+ <PressedId>5032</PressedId>
+ <NormalId>5032</NormalId>
+ </Element>
+ <Element>
+  <ElementName>new Button</ElementName>
+  <Type>ButtonElement</Type>
+  <X>428</X>
+  <Y>204</Y>
+  <Z>7</Z>
+ <GumpLink></GumpLink>
+ <PressedId>5032</PressedId>
+ <NormalId>5032</NormalId>
+ </Element>
+ <Element>
+  <ElementName>new Label</ElementName>
+  <Type>LabelElement</Type>
+  <X>443</X>
+  <Y>200</Y>
+  <Z>8</Z>
+ <Hue>0</Hue>
+ <Text>Male</Text>
+ </Element>
+ <Element>
+  <ElementName>new Label</ElementName>
+  <Type>LabelElement</Type>
+  <X>125</X>
+  <Y>200</Y>
+  <Z>9</Z>
+ <Hue>0</Hue>
+ <Text>Mannequin</Text>
+ </Element>
+ <Element>
+  <ElementName>new Button</ElementName>
+  <Type>ButtonElement</Type>
+  <X>427</X>
+  <Y>258</Y>
+  <Z>10</Z>
+ <GumpLink></GumpLink>
+ <PressedId>5032</PressedId>
+ <NormalId>5032</NormalId>
+ </Element>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>230</X>
+  <Y>90</Y>
+  <Z>11</Z>
+ <Hue>0</Hue>
+ <GumpId>666</GumpId>
+ </Element>
+ <Element>
+  <ElementName>new Image</ElementName>
+  <Type>ImageElement</Type>
+  <X>230</X>
+  <Y>90</Y>
+  <Z>12</Z>
+ <Hue>0</Hue>
+ <GumpId>5809</GumpId>
+ </Element>
+</CompendiumArticle>

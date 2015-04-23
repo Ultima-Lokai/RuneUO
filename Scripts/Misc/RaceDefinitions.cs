@@ -140,7 +140,7 @@ namespace Server.Misc
             {
                 0x0BF, 0x24D, 0x24E, 0x24F, 0x353, 0x361, 0x367, 0x374,
                 0x375, 0x376, 0x381, 0x382, 0x383, 0x384, 0x385, 0x389,
-                0x3DE, 0x3E5, 0x3E6, 0x3E8, 0x3E9, 0x430, 0x4A7, 0x4DE,
+                0x3DE, 0x3E5, 0x3E6, 0x3E8, 0x3E9, 0x3CB, 0x4A7, 0x4DE,
                 0x51D, 0x53F, 0x579, 0x76B, 0x76C, 0x76D, 0x835, 0x903
             };
 
@@ -255,7 +255,9 @@ namespace Server.Misc
                 }
                 else
                 {
-                    return ((itemID == 0x4261 || itemID == 0x4262) || (itemID >= 0x4273 && itemID <= 0x4275) || (itemID == 0x42B0 || itemID == 0x42B1) || (itemID == 0x42AA || itemID == 0x42AB));
+                    return ((itemID == 0x4261 || itemID == 0x4262) || (itemID >= 0x4273 && itemID <= 0x4275) || ( 
+                        /*itemID == 0x42B0 || */  /* Commented this out since it is a Facial Horn ... see Below */
+                        itemID == 0x42B1) || (itemID == 0x42AA || itemID == 0x42AB));
                 }
             }
 
@@ -279,8 +281,8 @@ namespace Server.Misc
                             return 0x4274;
                         case 4:
                             return 0x4275;
-                        case 5:
-                            return 0x42B0;
+                        //case 5:
+                        //    return 0x42B0;  // This is a facial horn, so should not be included in Female Horns
                         case 6:
                             return 0x42B1;
                         case 7:
@@ -313,10 +315,10 @@ namespace Server.Misc
             {
                 0x86DB, 0x86DC, 0x86DD, 0x86DE,
                 0x86DF, 0x86E0, 0x86E1, 0x86E2,
-                0x86E3, 0x86E4, 0x86E5, 0x86E6
-                // 0x, 0x, 0x, 0x, // 86E7/86E8/86E9/86EA?
-                // 0x, 0x, 0x, 0x, // 86EB/86EC/86ED/86EE?
-                // 0x86F3, 0x86DB, 0x86DC, 0x86DD
+                0x86E3, 0x86E4, 0x86E5, 0x86E6,
+                0x86E7, 0x86E8, 0x86E9, 0x86EA, 
+                0x86EB, 0x86EC, 0x86ED, 0x86EE,
+                0x86EF, 0x86F0, 0x86F1, 0x86F2, 0x86F3
             };
 
             public override int ClipSkinHue(int hue)
