@@ -29,7 +29,7 @@ namespace Server.Mobiles
         // THESE CAN BE CUSTOMIZED TO SUIT YOUR SHARD ===================================
 
         // Set 'true' if you want to charge Gold for each use of the Customizations gump.
-	    private const bool CHARGE_FOR_CUSTOMIZATIONS = false; // <-------- IMPORTANT! ===
+	    private const bool CHARGE_FOR_CUSTOMIZATIONS = true; // <-------- IMPORTANT! ===
 
         // These FEES are only used if the above bool is set to true.
 	    private const int FEE_TO_RANDOMIZE = 5000; 
@@ -41,7 +41,7 @@ namespace Server.Mobiles
         private const int FEE_TO_CHANGE_HAIR_COLOR = 250;
 
         // Set 'true' if you want the quick-change feature to expend STAMINA points
-        private const bool STAM_LOSS_FOR_CHANGE = false; // <-------- IMPORTANT! ========
+        private const bool STAM_LOSS_FOR_CHANGE = true; // <-------- IMPORTANT! ========
 
         // This cost will only be used if the above bool is set to true.
 	    private const int STAM_LOSS = 8;
@@ -127,7 +127,11 @@ namespace Server.Mobiles
 	    {
 	        if (from == Owner)
 	        {
-	            SwitchClothes(from);
+	            if (SwitchClothes(from))
+                {
+                    from.FixedParticles(0x376A, 8, 16, 5030, EffectLayer.Waist);
+                    FixedParticles(0x376A, 8, 16, 5030, EffectLayer.Waist);
+	            }
 	        }
             else
 	            base.OnDoubleClick(from);
@@ -183,7 +187,11 @@ namespace Server.Mobiles
             {
                 if (from == dummy.Owner)
                 {
-                    dummy.SwitchClothes(from);
+                    if (dummy.SwitchClothes(from))
+                    {
+                        from.FixedParticles(0x376A, 8, 16, 5030, EffectLayer.Waist);
+                        dummy.FixedParticles(0x376A, 8, 16, 5030, EffectLayer.Waist);
+                    }
                 }
 	        }
         }
@@ -254,6 +262,31 @@ namespace Server.Mobiles
 
         private bool SwitchClothes(Mobile from)
         {
+            if (BaseHouse.FindHouseAt(from) == null || !BaseHouse.FindHouseAt(from).IsOwner(from))
+            {
+                from.SendMessage("You must be in your house to use this.");
+                return false;
+            }
+
+            if (BaseHouse.FindHouseAt(this) == null || !BaseHouse.FindHouseAt(this).IsOwner(from))
+            {
+                from.SendMessage("Your mannequin must be in your own house to use it.");
+                return false;
+            }
+
+            if (BaseHouse.FindHouseAt(this) != null && BaseHouse.FindHouseAt(from) != null &&
+                BaseHouse.FindHouseAt(this) != BaseHouse.FindHouseAt(from))
+            {
+                from.SendMessage("You and your mannequin must be in the same house to do that!");
+                return false;
+            }
+
+            if (!CanSee(from) || !from.InLOS(this))
+            {
+                from.SendMessage("You and your mannequin must be able to see eachother to do that.");
+                return false;
+            }
+
             if (STAM_LOSS_FOR_CHANGE)
             {
                 if (from.Stam <= STAM_LOSS)
@@ -261,7 +294,6 @@ namespace Server.Mobiles
                     from.SendMessage("You don't have the energy to make a quick change at this time.");
                     return false;
                 }
-                from.Stam -= STAM_LOSS;
             }
 
             List<Item> mannequinItems = new List<Item>();
@@ -298,12 +330,34 @@ namespace Server.Mobiles
                 EquipItem(item);
             }
 
+            bool someRemoved = false;
+            int itemsAdded = 0;
             foreach (Item item in mannequinItems)
             {
-                from.EquipItem(item);
+                if (from.EquipItem(item))
+                {
+                    itemsAdded++;
+                }
+                else
+                {
+                    someRemoved = true;
+                    if (!from.AddToBackpack(item))
+                        item.DropToWorld(from, from.Location);
+                }
             }
 
-            return false;
+            if (itemsAdded > 0 && STAM_LOSS_FOR_CHANGE)
+            {
+                from.Stam -= STAM_LOSS;
+            }
+
+            if (someRemoved)
+            {
+                from.SendMessage("You were not able to equip everything.");
+                return false;
+            }
+
+            return true;
         }
 
 	    private bool CanEquip(Item item)

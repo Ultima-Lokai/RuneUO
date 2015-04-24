@@ -1420,6 +1420,8 @@
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\BlacksmithMachine.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\QuestClean.cs" />
     <Compile Include="Custom Systems\Mine\Mannequin\Mannequin.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\MiningRocks.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\RunescapeOre.cs" />
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\FeluccaTravelMap.cs" />
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\IlshenarTravelMap.cs" />
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\MalasTravelMap.cs" />

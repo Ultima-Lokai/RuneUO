@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<accounts count="2">
+	<account>
+		<username>Lokai</username>
+		<newCryptPassword>FC-2B-94-25-1C-A2-65-0F-2A-3D-90-4C-DF-BB-CC-30-F7-22-71-F5</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2015-04-21T14:12:07.9625276Z</created>
+		<lastLogin>2015-04-24T17:11:53.8677972Z</lastLogin>
+		<totalGameTime>PT7H25M46.8527566S</totalGameTime>
+		<chars>
+			<char index="0">1</char>
+			<char index="1">9</char>
+			<char index="2">10</char>
+			<char index="3">11</char>
+		</chars>
+		<addressList count="1">
+			<ip>192.168.1.122</ip>
+		</addressList>
+	</account>
+	<account>
+		<username>Lokar</username>
+		<newCryptPassword>38-B0-64-C4-38-6A-C0-21-5E-34-5D-0A-8D-A7-3F-78-1A-25-EE-C3</newCryptPassword>
+		<created>2015-04-22T16:55:34.4683912Z</created>
+		<lastLogin>2015-04-22T17:18:50.4604513Z</lastLogin>
+		<totalGameTime>PT20M33.5496152S</totalGameTime>
+		<chars>
+			<char index="0">2</char>
+			<char index="1">4</char>
+			<char index="2">5</char>
+			<char index="3">6</char>
+			<char index="4">7</char>
+			<char index="5">8</char>
+		</chars>
+		<addressList count="1">
+			<ip>192.168.1.122</ip>
+		</addressList>
+	</account>
+</accounts>
