@@ -67,3 +67,5 @@ Scripts/Output/Scripts.CS.dll
 *.hash
 Scripts/Output/Scripts.CS.hash
 Scripts/Output/Scripts.CS.dll
+*.xml
+*.log

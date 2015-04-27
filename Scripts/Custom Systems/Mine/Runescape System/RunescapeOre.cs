@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿
 
 namespace Server.Runescape
 {
@@ -13,7 +10,40 @@ namespace Server.Runescape
         {
             get { return mOreType; }
         }
-        public abstract BaseRunescapeOre GetOre();
+
+        public override int Hue
+        {
+            get
+            {
+                switch (OreType)
+                {
+                    case Ores.Adamantite:
+                        return 0x363;
+                    case Ores.Clay:
+                        return 0x222;
+                    case Ores.Coal:
+                        return 0x7E3;
+                    case Ores.Copper:
+                        return 0x466;
+                    case Ores.Gold:
+                        return 0x501;
+                    case Ores.Iron:
+                        return 0x21F;
+                    case Ores.Mithril:
+                        return 0x18A;
+                    case Ores.RuneEssence:
+                        return 0x7C4;
+                    case Ores.Rune:
+                        return 0xBC;
+                    case Ores.Silver:
+                        return 0x47E;
+                    case Ores.Tin:
+                        return 0x764;
+                }
+                return 0;
+            }
+            set { base.Hue = value; }
+        }
         
 
         public BaseRunescapeOre(Ores oreType)
@@ -51,6 +81,226 @@ namespace Server.Runescape
                         break;
                     }
             }
+        }
+    }
+
+    public class ClayOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public ClayOre() : base(Ores.Clay) { }
+
+        public ClayOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class RuneOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public RuneOre() : base(Ores.Rune) { }
+
+        public RuneOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class RuneEssence : BaseRunescapeOre
+    {
+        [Constructable]
+        public RuneEssence() : base(Ores.RuneEssence) { }
+
+        public RuneEssence(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class AdamantiteOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public AdamantiteOre() : base(Ores.Adamantite) { }
+
+        public AdamantiteOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class MithrilOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public MithrilOre() : base(Ores.Mithril) { }
+
+        public MithrilOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class CoalOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public CoalOre() : base(Ores.Coal) { }
+
+        public CoalOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class GoldMetalOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public GoldMetalOre() : base(Ores.Gold) { }
+
+        public GoldMetalOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class SilverMetalOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public SilverMetalOre() : base(Ores.Silver) { }
+
+        public SilverMetalOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class IronMetalOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public IronMetalOre() : base(Ores.Iron) { }
+
+        public IronMetalOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class TinOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public TinOre() : base(Ores.Tin) { }
+
+        public TinOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class CopperMetalOre : BaseRunescapeOre
+    {
+        [Constructable]
+        public CopperMetalOre() : base(Ores.Copper) { }
+
+        public CopperMetalOre(Serial serial) : base(serial) { }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
         }
     }
 }

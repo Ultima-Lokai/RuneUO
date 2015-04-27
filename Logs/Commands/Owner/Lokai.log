@@ -1079,3 +1079,105 @@
 4/24/2015 6:05:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'animateme 23'
 4/24/2015 6:05:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'animateme 24'
 4/24/2015 6:05:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'animateme 25'
+4/27/2015 6:24:42 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add newcopp'
+4/27/2015 6:24:47 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3046, 661, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:47 PM: 192.168.1.122: Serials: 0x400000F9; 
+4/27/2015 6:24:48 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3047, 659, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:48 PM: 192.168.1.122: Serials: 0x400000FA; 
+4/27/2015 6:24:49 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3049, 659, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:49 PM: 192.168.1.122: Serials: 0x400000FB; 
+4/27/2015 6:24:50 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3045, 659, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:50 PM: 192.168.1.122: Serials: 0x400000FD; 
+4/27/2015 6:24:50 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3043, 660, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:50 PM: 192.168.1.122: Serials: 0x400000FE; 
+4/27/2015 6:24:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3042, 662, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:51 PM: 192.168.1.122: Serials: 0x400000FF; 
+4/27/2015 6:24:52 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3042, 664, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:52 PM: 192.168.1.122: Serials: 0x40000100; 
+4/27/2015 6:24:53 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3046, 657, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:53 PM: 192.168.1.122: Serials: 0x40000101; 
+4/27/2015 6:24:54 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3048, 657, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:54 PM: 192.168.1.122: Serials: 0x40000102; 
+4/27/2015 6:24:55 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3048, 660, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:55 PM: 192.168.1.122: Serials: 0x40000103; 
+4/27/2015 6:24:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3042, 662, 0) in Trammel: "NewCopperOre"
+4/27/2015 6:24:57 PM: 192.168.1.122: Serials: 0x40000104; 
+4/27/2015 6:26:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add ore'
+4/27/2015 6:26:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3042, 662, 0) in Trammel: "AdamantiteOre"
+4/27/2015 6:26:30 PM: 192.168.1.122: Serials: 0x40000105; 
+4/27/2015 6:26:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3042, 660, 0) in Trammel: "AdamantiteOre"
+4/27/2015 6:26:31 PM: 192.168.1.122: Serials: 0x40000106; 
+4/27/2015 6:26:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3043, 659, 0) in Trammel: "BronzeOre"
+4/27/2015 6:26:36 PM: 192.168.1.122: Serials: 0x40000107; 
+4/27/2015 6:26:40 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3043, 661, 0) in Trammel: "ClayOre"
+4/27/2015 6:26:40 PM: 192.168.1.122: Serials: 0x40000108; 
+4/27/2015 6:26:41 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3044, 662, 0) in Trammel: "ClayOre"
+4/27/2015 6:26:41 PM: 192.168.1.122: Serials: 0x4000011A; 
+4/27/2015 6:26:56 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3042, 662, 0) in Trammel: "MithrilOre"
+4/27/2015 6:26:56 PM: 192.168.1.122: Serials: 0x40000121; 
+4/27/2015 6:27:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3046, 658, 0) in Trammel: "NewGoldOre"
+4/27/2015 6:27:00 PM: 192.168.1.122: Serials: 0x40000122; 
+4/27/2015 6:27:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3047, 659, 0) in Trammel: "NewGoldOre"
+4/27/2015 6:27:01 PM: 192.168.1.122: Serials: 0x40000123; 
+4/27/2015 6:27:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3041, 661, 0) in Trammel: "NewIronOre"
+4/27/2015 6:27:07 PM: 192.168.1.122: Serials: 0x40000124; 
+4/27/2015 6:27:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3043, 663, 0) in Trammel: "NewSilverOre"
+4/27/2015 6:27:10 PM: 192.168.1.122: Serials: 0x40000125; 
+4/27/2015 6:27:13 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3041, 663, 0) in Trammel: "RuneOre"
+4/27/2015 6:27:13 PM: 192.168.1.122: Serials: 0x40000126; 
+4/27/2015 6:27:18 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3044, 658, 0) in Trammel: "TinOre"
+4/27/2015 6:27:18 PM: 192.168.1.122: Serials: 0x40000127; 
+4/27/2015 6:27:37 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3046, 661, 0) in Trammel: "RuneEssence"
+4/27/2015 6:27:37 PM: 192.168.1.122: Serials: 0x40000128; 
+4/27/2015 6:27:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3048, 660, 0) in Trammel: "RuneEssence"
+4/27/2015 6:27:38 PM: 192.168.1.122: Serials: 0x40000129; 
+4/27/2015 6:27:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3049, 658, 0) in Trammel: "RuneEssence"
+4/27/2015 6:27:39 PM: 192.168.1.122: Serials: 0x4000012A; 
+4/27/2015 6:27:41 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3048, 657, 0) in Trammel: "RuneEssence"
+4/27/2015 6:27:41 PM: 192.168.1.122: Serials: 0x4000012B; 
+4/27/2015 6:27:42 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3046, 656, 0) in Trammel: "RuneEssence"
+4/27/2015 6:27:42 PM: 192.168.1.122: Serials: 0x4000012C; 
+4/27/2015 6:27:43 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3048, 655, 0) in Trammel: "RuneEssence"
+4/27/2015 6:27:43 PM: 192.168.1.122: Serials: 0x4000012D; 
+4/27/2015 6:27:44 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3049, 656, 0) in Trammel: "RuneEssence"
+4/27/2015 6:27:44 PM: 192.168.1.122: Serials: 0x4000012E; 
+4/27/2015 6:27:52 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'm remove'
+4/27/2015 6:27:56 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000108 (ClayOre)
+4/27/2015 6:27:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000128 (RuneEssence)
+4/27/2015 6:27:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x400000F9 (NewCopperOre)
+4/27/2015 6:27:59 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000102 (NewCopperOre)
+4/27/2015 6:28:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000122 (NewGoldOre)
+4/27/2015 6:28:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000012B (RuneEssence)
+4/27/2015 6:28:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000012C (RuneEssence)
+4/27/2015 6:28:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000129 (RuneEssence)
+4/27/2015 6:28:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000012A (RuneEssence)
+4/27/2015 6:28:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000012E (RuneEssence)
+4/27/2015 6:29:15 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+4/27/2015 6:29:16 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000107 (BronzeOre)
+4/27/2015 6:29:55 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add coalo'
+4/27/2015 6:29:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3046, 656, 0) in Trammel: "CoalOre"
+4/27/2015 6:29:57 PM: 192.168.1.122: Serials: 0x4000012F; 
+4/27/2015 6:31:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get hue'
+4/27/2015 6:31:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get hue'
+4/27/2015 6:31:13 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/27/2015 6:31:28 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/27/2015 6:33:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/27/2015 6:33:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get hue'
+4/27/2015 6:33:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get hue'
+4/27/2015 6:34:21 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'set hue -x1E7'
+4/27/2015 6:34:32 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'set hue 0x1E7'
+4/27/2015 6:34:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'hue' of 0x4000011F (Static) to '487'
+4/27/2015 6:34:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+4/27/2015 6:34:59 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000012F (CoalOre)
+4/27/2015 6:35:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+4/27/2015 6:35:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011F (Static)
+4/27/2015 6:35:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+4/27/2015 6:35:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011E (Static)
+4/27/2015 6:36:54 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'searchimage '
+4/27/2015 6:37:41 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/27/2015 6:42:20 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'set hue 0'
+4/27/2015 6:42:23 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'hue' of 0x4000011D (Static) to '0'
+4/27/2015 7:04:27 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+4/27/2015 7:04:41 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add item 22332'
+4/27/2015 7:04:42 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3045, 661, 0) in Trammel: "item" "22332"
+4/27/2015 7:04:42 PM: 192.168.1.122: Serials: 0x40000131; 

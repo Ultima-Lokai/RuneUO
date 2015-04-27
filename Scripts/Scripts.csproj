@@ -1416,7 +1416,7 @@
     <Compile Include="Custom Systems\Mine\Custom Harvest\Tree Harvesting\TreeHatchet.cs" />
     <Compile Include="Custom Systems\Mine\Custom Harvest\Tree Harvesting\TreeProducts.cs" />
     <Compile Include="Custom Systems\Mine\Custom Harvest\Tree Harvesting\TreeResources.cs" />
-    <Compile Include="Custom Systems\Mine\CustomGump.cs" />
+    <Compile Include="Custom Systems\Mine\Individual Custom Scripts\CustomGump.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\BlacksmithMachine.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\QuestClean.cs" />
     <Compile Include="Custom Systems\Mine\Mannequin\Mannequin.cs" />
