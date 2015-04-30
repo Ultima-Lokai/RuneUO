@@ -301,7 +301,7 @@ namespace Server.Mobiles
 
             foreach (Item item in Items)
             {
-                if (item.IsEquipped() && !(item is Backpack))
+                if (IsEquipped(item) && !(item is Backpack))
                 {
                     mannequinItems.Add(item);
                 }
@@ -309,7 +309,7 @@ namespace Server.Mobiles
 
             foreach (Item item in from.Items)
             {
-                if (item.IsEquipped() && !(item is Backpack))
+                if (IsEquipped(item) && !(item is Backpack))
                 {
                     mobileItems.Add(item);
                 }
@@ -359,6 +359,13 @@ namespace Server.Mobiles
 
             return true;
         }
+
+	    private bool IsEquipped(Item item)
+	    {
+	        return item != null && item.Parent is Mobile && ((Mobile) item.Parent).FindItemOnLayer(item.Layer) == item &&
+	               item.Layer != Layer.Mount && item.Layer != Layer.Bank && 
+                   item.Layer != Layer.Invalid && item.Layer != Layer.Backpack;
+	    }
 
 	    private bool CanEquip(Item item)
 	    {

@@ -7,17 +7,57 @@ namespace Server.Runescape
     {
         private Ores mOreType;
 
-        private DateTime mOreRespawnTime;
+        private MyTimer myTimer;
+
+        private class MyTimer : Timer
+        {
+            private BaseMiningRocks mRocks;
+
+            public MyTimer(BaseMiningRocks rocks)
+                : base(TimeSpan.FromSeconds(RespawnSeconds(rocks.OreType)))
+            {
+                mRocks = rocks;
+                mRocks.InvalidateProperties();
+            }
+            
+            protected override void OnTick()
+            {
+                mRocks.OrePresent = true;
+                mRocks.InvalidateProperties();
+            }
+        }
+
+        private static int RespawnSeconds(Ores ores)
+        {
+            switch (ores)
+            {
+                case Ores.Clay:
+                    return 4;
+                case Ores.Iron:
+                    return 6;
+                case Ores.Silver:
+                    return 15;
+                case Ores.Gold:
+                    return 27;
+                case Ores.Coal:
+                    return 103;
+                case Ores.Mithril:
+                    return 226;
+                case Ores.Adamantite:
+                    return 1156;
+                case Ores.Rune:
+                    return 12019;
+                case Ores.RuneEssence:
+                case Ores.Copper:
+                case Ores.Tin:
+                default:
+                    return 2;
+            }
+        }
 
         public Ores OreType
         {
             get { return mOreType; }
-        }
-
-        public DateTime OreRespawnTime
-        {
-            get { return mOreRespawnTime; }
-            set { mOreRespawnTime = value; }
         }
 
         public bool OrePresent { get; set; }
@@ -30,51 +70,70 @@ namespace Server.Runescape
             return false;
         }
 
+        public override void AddNameProperties(ObjectPropertyList list)
+        {
+            base.AddNameProperties(list);
+
+            list.Add(OrePresent ? "* Double-click to mine. *" : "* No ore present. *");
+        }
+
         public override void OnDoubleClick(Mobile from)
         {
-            if (from != null && from.Backpack != null && from.InRange(this.Location, 1))
+            if (from.Backpack != null && from.InRange(this.Location, 1))
             {
-                Item pick = from.FindItemOnLayer(Layer.OneHanded);
-                Item[] items = from.Backpack.FindItemsByType(typeof (Pickaxe));
-                if ((pick != null && pick is Pickaxe) ||
-                    (from.Backpack != null && from.Backpack.FindItemByType(typeof (Pickaxe)) != null))
+                if (OrePresent)
                 {
-                    // Face toward the Rocks
-                    // Do Mining animation
-                    // Keep doing it until successful
-                    // Better picks mine faster
-                    // Higher level rocks mine slower
-                    // Chance to find a Gem
-                    // Give ore
-                    // Reset the OreRespawnTime
+                    Item pick = from.FindItemOnLayer(Layer.OneHanded);
+                    if (pick == null) pick = SelectBestPick(from, from.Backpack);
+                    if (pick != null && pick is RunescapePickaxe)
+                    {
+                        from.SendMessage("You swing your {0} at the rocks.", pick.Name);
+                        // Face toward the Rocks
+                        // Do Mining animation
+                        // Keep doing it until successful
+                        // Better picks mine faster
+                        // Higher level rocks mine slower
+                        // Chance to find a Gem
+                        // Give ore
+                        Item ore = GetOre();
+                        from.AddToBackpack(ore);
+
+                        // Reset the OreRespawnTime
+                        OrePresent = false;
+                        myTimer.Start();
+                        Hue = 0;
+                        InvalidateProperties();
+                    }
+                    else
+                    {
+                        from.SendMessage("You must have a proper pickaxe to mine for ore.");
+                    }
                 }
                 else
                 {
-                    from.SendMessage("You must have a pickaxe to Mine for ore.");
+                    from.SendMessage("There is no ore left in this rock.");
                 }
             }
         }
 
         private Item SelectBestPick(Mobile from, Container pack)
         {
-            Pickaxe item = null;
-            Pickaxe[] picks = (Pickaxe[])pack.FindItemsByType(typeof(Pickaxe));
-            foreach (Pickaxe pick in picks)
+            RunescapePickaxe item = null;
+            Item[] picks = pack.FindItemsByType(typeof(RunescapePickaxe));
+            foreach (Item pickitem in picks)
             {
-                if ((item != null && PickIsBetterThanItem(pick, item)) || (item == null))
+                if (pickitem is RunescapePickaxe)
                 {
-                    if (pick.CanEquip(from))
-                        item = pick;
+                    RunescapePickaxe pick = (RunescapePickaxe) pickitem;
+                    if ((item != null && pick.WeaponType > item.WeaponType) || (item == null))
+                    {
+                        if (pick.CanEquip(from))
+                            item = pick;
+                    }
                 }
             }
 
             return item;
-        }
-
-        private bool PickIsBetterThanItem(Pickaxe pick, Pickaxe item)
-        {
-
-            return false;
         }
 
         public override int Hue
@@ -119,6 +178,7 @@ namespace Server.Runescape
             OrePresent = true;
             Movable = false;
             Stackable = false;
+            myTimer = new MyTimer(this);
         }
 
         public BaseMiningRocks(Serial serial)
@@ -146,6 +206,8 @@ namespace Server.Runescape
                 case 0:
                 {
                     mOreType = (Ores) reader.ReadInt();
+                    OrePresent = true;
+                    myTimer = new MyTimer(this);
                     break;
                 }
             }

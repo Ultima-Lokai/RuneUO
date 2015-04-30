@@ -91,6 +91,8 @@ namespace Server.Runescape
 
         public ClayOre(Serial serial) : base(serial) { }
 
+        public override string DefaultName { get { return "Clay Ore"; } }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
@@ -110,6 +112,8 @@ namespace Server.Runescape
         public RuneOre() : base(Ores.Rune) { }
 
         public RuneOre(Serial serial) : base(serial) { }
+
+        public override string DefaultName { get { return "Rune Ore"; } }
 
         public override void Serialize(GenericWriter writer)
         {
@@ -131,6 +135,8 @@ namespace Server.Runescape
 
         public RuneEssence(Serial serial) : base(serial) { }
 
+        public override string DefaultName { get { return "Rune Essence"; } }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
@@ -150,6 +156,8 @@ namespace Server.Runescape
         public AdamantiteOre() : base(Ores.Adamantite) { }
 
         public AdamantiteOre(Serial serial) : base(serial) { }
+
+        public override string DefaultName { get { return "Adamantite Ore"; } }
 
         public override void Serialize(GenericWriter writer)
         {
@@ -171,6 +179,8 @@ namespace Server.Runescape
 
         public MithrilOre(Serial serial) : base(serial) { }
 
+        public override string DefaultName { get { return "Mithril Ore"; } }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
@@ -190,6 +200,8 @@ namespace Server.Runescape
         public CoalOre() : base(Ores.Coal) { }
 
         public CoalOre(Serial serial) : base(serial) { }
+
+        public override string DefaultName { get { return "Coal Ore"; } }
 
         public override void Serialize(GenericWriter writer)
         {
@@ -211,6 +223,8 @@ namespace Server.Runescape
 
         public GoldMetalOre(Serial serial) : base(serial) { }
 
+        public override string DefaultName { get { return "Gold Ore"; } }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
@@ -230,6 +244,8 @@ namespace Server.Runescape
         public SilverMetalOre() : base(Ores.Silver) { }
 
         public SilverMetalOre(Serial serial) : base(serial) { }
+
+        public override string DefaultName { get { return "Silver Ore"; } }
 
         public override void Serialize(GenericWriter writer)
         {
@@ -251,6 +267,8 @@ namespace Server.Runescape
 
         public IronMetalOre(Serial serial) : base(serial) { }
 
+        public override string DefaultName { get { return "Iron Ore"; } }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
@@ -271,6 +289,8 @@ namespace Server.Runescape
 
         public TinOre(Serial serial) : base(serial) { }
 
+        public override string DefaultName { get { return "Tin Ore"; } }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
@@ -290,6 +310,8 @@ namespace Server.Runescape
         public CopperMetalOre() : base(Ores.Copper) { }
 
         public CopperMetalOre(Serial serial) : base(serial) { }
+
+        public override string DefaultName { get { return "Copper Ore"; } }
 
         public override void Serialize(GenericWriter writer)
         {

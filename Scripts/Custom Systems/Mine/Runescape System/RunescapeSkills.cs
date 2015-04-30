@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using Server.Commands;
 
 namespace Server.Runescape
@@ -67,11 +63,49 @@ namespace Server.Runescape
     {
         Bronze,
         Iron,
+        Steel,
         Silver,
         Gold,
         Mithril,
         Adamantite,
         Rune
+    }
+
+    public enum RuneWeaponType
+    {
+        Bronze,
+        Iron,
+        Silver,
+        Steel,
+        Gold,
+        Mithril,
+        Adamantite,
+        Rune,
+        Dragon
+    }
+
+    public enum RuneArmorType
+    {
+        Leather,
+        StuddedLeather,
+        BronzeChain,
+        BronzePlate,
+        IronChain,
+        IronPlate,
+        SteelChain,
+        SteelPlate,
+        GreenDragonHide,
+        MithrilChain,
+        MithrilPlate,
+        BlueDragonHide,
+        AdamantiteChain,
+        AdamantitePlate,
+        RedDragonHide,
+        RuneChain,
+        RunePlate,
+        BlackDragonHide,
+        DragonChain,
+        DragonPlate
     }
 
     public enum Bows
@@ -113,14 +147,14 @@ namespace Server.Runescape
 
     public enum Gems
     {
+        Opal,
+        Jade,
+        Topaz,
         Sapphire,
         Emerald,
         Ruby,
         Diamond,
-        Dragonstone,
-        Opal,
-        Jade,
-        Topaz
+        Dragonstone
     }
 
     public enum Runes
