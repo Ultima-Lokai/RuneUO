@@ -20,6 +20,12 @@ namespace Server.Runescape
         {
         }
 
+        public override int Hue
+        {
+            get { return Utilities.Hue(WeaponType); }
+            set { base.Hue = value; }
+        }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

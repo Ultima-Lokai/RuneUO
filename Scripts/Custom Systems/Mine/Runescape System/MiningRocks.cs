@@ -1,5 +1,6 @@
 ﻿using System;
 using Server.Items;
+using Server.Network;
 
 namespace Server.Runescape
 {
@@ -14,44 +15,19 @@ namespace Server.Runescape
             private BaseMiningRocks mRocks;
 
             public MyTimer(BaseMiningRocks rocks)
-                : base(TimeSpan.FromSeconds(RespawnSeconds(rocks.OreType)))
+                : base(TimeSpan.FromSeconds(Utilities.RespawnSeconds(rocks.OreType)))
             {
                 mRocks = rocks;
+                mRocks.Hue = Utilities.Hue(mRocks.OreType);
                 mRocks.InvalidateProperties();
             }
             
             protected override void OnTick()
             {
                 mRocks.OrePresent = true;
+                mRocks.Hue = Utilities.Hue(mRocks.OreType);
+                mRocks.ReleaseWorldPackets();
                 mRocks.InvalidateProperties();
-            }
-        }
-
-        private static int RespawnSeconds(Ores ores)
-        {
-            switch (ores)
-            {
-                case Ores.Clay:
-                    return 4;
-                case Ores.Iron:
-                    return 6;
-                case Ores.Silver:
-                    return 15;
-                case Ores.Gold:
-                    return 27;
-                case Ores.Coal:
-                    return 103;
-                case Ores.Mithril:
-                    return 226;
-                case Ores.Adamantite:
-                    return 1156;
-                case Ores.Rune:
-                    return 12019;
-                case Ores.RuneEssence:
-                case Ores.Copper:
-                case Ores.Tin:
-                default:
-                    return 2;
             }
         }
 
@@ -60,14 +36,26 @@ namespace Server.Runescape
             get { return mOreType; }
         }
 
-        public bool OrePresent { get; set; }
+        private bool mOrePresent;
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool OrePresent
+        {
+            get { return mOrePresent; }
+            set
+            {
+                mOrePresent = value;
+                InvalidateProperties();
+            }
+        }
 
         public abstract BaseRunescapeOre GetOre();
 
-        public bool GiveOreTo(Mobile m)
+        public void GiveOreTo(Mobile from)
         {
-
-            return false;
+            Item ore = GetOre();
+            if (from.AddToBackpack(ore))
+                from.SendMessage("You mined some {0}", ore.Name);
         }
 
         public override void AddNameProperties(ObjectPropertyList list)
@@ -81,37 +69,100 @@ namespace Server.Runescape
         {
             if (from.Backpack != null && from.InRange(this.Location, 1))
             {
-                if (OrePresent)
+                if (!from.Mounted)
                 {
-                    Item pick = from.FindItemOnLayer(Layer.OneHanded);
-                    if (pick == null) pick = SelectBestPick(from, from.Backpack);
-                    if (pick != null && pick is RunescapePickaxe)
+                    if (OrePresent)
                     {
-                        from.SendMessage("You swing your {0} at the rocks.", pick.Name);
-                        // Face toward the Rocks
-                        // Do Mining animation
-                        // Keep doing it until successful
-                        // Better picks mine faster
-                        // Higher level rocks mine slower
-                        // Chance to find a Gem
-                        // Give ore
-                        Item ore = GetOre();
-                        from.AddToBackpack(ore);
-
-                        // Reset the OreRespawnTime
-                        OrePresent = false;
-                        myTimer.Start();
-                        Hue = 0;
-                        InvalidateProperties();
+                        Item pick = from.FindItemOnLayer(Layer.OneHanded);
+                        if (pick == null) pick = SelectBestPick(from, from.Backpack);
+                        if (pick != null && pick is RunescapePickaxe)
+                        {
+                            from.SendMessage("You swing your {0} at the rocks.", pick.Name);
+                            new InternalTimer(from, this, (RunescapePickaxe)pick).Start();
+                        }
+                        else
+                        {
+                            from.SendMessage("You must have a proper pickaxe to mine for ore.");
+                        }
                     }
                     else
                     {
-                        from.SendMessage("You must have a proper pickaxe to mine for ore.");
+                        from.SendMessage("There is no ore left in this rock.");
                     }
                 }
                 else
                 {
-                    from.SendMessage("There is no ore left in this rock.");
+                    from.SendLocalizedMessage(1061089); // You must dismount first.
+                }
+            }
+        }
+
+        private void ResetOreSpawn()
+        {
+            OrePresent = false;
+            Hue = 0;
+            myTimer.Start();
+            InvalidateProperties();
+            ReleaseWorldPackets();
+        }
+
+        private class InternalTimer : Timer
+        {
+            private Mobile player;
+            private BaseMiningRocks rocks;
+            private RunescapePickaxe pick;
+            private bool successful;
+            private int count;
+
+            public InternalTimer(Mobile from, BaseMiningRocks miningRocks, RunescapePickaxe pickaxe)
+                : base(TimeSpan.FromSeconds(0), TimeSpan.FromSeconds(2), 30)
+            {
+                player = from;
+                rocks = miningRocks;
+                pick = pickaxe;
+                successful = false;
+                count = 0;
+            }
+
+            protected override void OnTick()
+            {
+                count++;
+                // Face toward the Rocks
+                player.Direction = player.GetDirectionTo(rocks.Location);
+
+                if (rocks == null || !rocks.OrePresent || pick == null || !player.InRange(rocks.Location, 1))
+                {
+                    player.SendMessage("You stop mining.");
+                    Stop();
+                }
+
+                // Do Mining animation
+                player.Animate(Utility.RandomBool() ? 11 : 12, 4, 2, true, true, 1);
+
+                // Chance to find a Gem
+                BaseRunescapeGem gem = Utilities.FindGem(player, rocks.OreType, pick);
+                if (gem != null)
+                {
+                    //give player a gem
+                    if (player.AddToBackpack(gem))
+                        player.SendMessage("You have found an {0}!", gem.Name);
+
+                    return;
+                }
+
+                // Keep doing it until successful
+                successful = Utility.Random(100) - (40 - count) > Utilities.MiningLevelNeeded(rocks.OreType); // This will be replaced once Levels are implemented.
+
+                // Better picks mine faster
+                // Higher level rocks mine slower
+                
+                if (successful)
+                {
+                    rocks.GiveOreTo(player);
+                    rocks.ResetOreSpawn();
+                    player.Animate(4, 1, 1, true, false, 0);
+                    player.InvalidateProperties();
+                    Stop();
                 }
             }
         }
@@ -127,7 +178,7 @@ namespace Server.Runescape
                     RunescapePickaxe pick = (RunescapePickaxe) pickitem;
                     if ((item != null && pick.WeaponType > item.WeaponType) || (item == null))
                     {
-                        if (pick.CanEquip(from))
+                        if (Utilities.CanUse(from, pick))
                             item = pick;
                     }
                 }
@@ -136,43 +187,15 @@ namespace Server.Runescape
             return item;
         }
 
+        [CommandProperty(AccessLevel.GameMaster)]
         public override int Hue
         {
-            get
-            {
-                if (OrePresent)
-                    switch (OreType)
-                    {
-                        case Ores.Adamantite:
-                            return 0x363;
-                        case Ores.Clay:
-                            return 0x222;
-                        case Ores.Coal:
-                            return 0x7E3;
-                        case Ores.Copper:
-                            return 0x466;
-                        case Ores.Gold:
-                            return 0x501;
-                        case Ores.Iron:
-                            return 0x21F;
-                        case Ores.Mithril:
-                            return 0x18A;
-                        case Ores.RuneEssence:
-                            return 0x7C4;
-                        case Ores.Rune:
-                            return 0xBC;
-                        case Ores.Silver:
-                            return 0x47E;
-                        case Ores.Tin:
-                            return 0x764;
-                    }
-                return 0;
-            }
-            set { base.Hue = value; }
+            get { return OrePresent ? Utilities.Hue(OreType) : 0; }
+            set { base.Hue = value; InvalidateProperties(); }
         }
 
         public BaseMiningRocks(Ores oreType)
-            : base(Utility.RandomBool() ? 0x1367 : Utility.Random(9) + 0x1363)
+            : base(Utility.RandomBool() ? 0x1367 : Utility.RandomList(0x1363, 0x1364, 0x1367, 0x136A, 0x136D))
         {
             mOreType = oreType;
             OrePresent = true;

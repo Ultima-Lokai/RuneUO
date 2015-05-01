@@ -13,35 +13,7 @@ namespace Server.Runescape
 
         public override int Hue
         {
-            get
-            {
-                switch (OreType)
-                {
-                    case Ores.Adamantite:
-                        return 0x363;
-                    case Ores.Clay:
-                        return 0x222;
-                    case Ores.Coal:
-                        return 0x7E3;
-                    case Ores.Copper:
-                        return 0x466;
-                    case Ores.Gold:
-                        return 0x501;
-                    case Ores.Iron:
-                        return 0x21F;
-                    case Ores.Mithril:
-                        return 0x18A;
-                    case Ores.RuneEssence:
-                        return 0x7C4;
-                    case Ores.Rune:
-                        return 0xBC;
-                    case Ores.Silver:
-                        return 0x47E;
-                    case Ores.Tin:
-                        return 0x764;
-                }
-                return 0;
-            }
+            get { return Utilities.Hue(OreType); }
             set { base.Hue = value; }
         }
         

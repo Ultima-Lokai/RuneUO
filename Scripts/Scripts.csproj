@@ -1422,6 +1422,8 @@
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\QuestClean.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\Steward.cs" />
     <Compile Include="Custom Systems\Mine\Mannequin\Mannequin.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Amulets.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Gems.cs" />
     <Compile Include="Custom Systems\Mine\Runescape System\MiningRocks.cs" />
     <Compile Include="Custom Systems\Mine\Runescape System\RunescapeOre.cs" />
     <Compile Include="Custom Systems\Mine\Runescape System\RunescapePickaxe.cs" />
@@ -1436,7 +1438,7 @@
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\ShardTravelGump.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\SuperShardTravelGump.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\VirtuesVicesGump.cs" />
-    <Compile Include="Custom Systems\Mine\Runescape System\RunescapeSkills.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\RunescapeSystem.cs" />
     <Compile Include="Custom Systems\SearchImage.cs" />
     <Compile Include="Custom Systems\StaticExporter.cs" />
     <Compile Include="Custom Systems\VitaNex\Core\Build\CSharpCompiler.cs" />

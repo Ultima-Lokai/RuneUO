@@ -1310,3 +1310,163 @@
 4/30/2015 6:33:43 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
 4/30/2015 6:34:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
 4/30/2015 6:34:29 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 2:55:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 2:56:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 2:56:40 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+5/1/2015 2:57:20 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+5/1/2015 2:57:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+5/1/2015 2:57:50 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 2:58:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x4000010A (GoldRocks) to '1282'
+5/1/2015 2:58:14 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 2:58:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'OrePresent' of 0x4000010E (RuneRocks) to 'True'
+5/1/2015 2:58:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'Hue' of 0x4000010E (RuneRocks) to '188'
+5/1/2015 3:37:54 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'm remove'
+5/1/2015 3:37:56 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000125 (SilverMetalOre)
+5/1/2015 3:37:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x400000FE (CoalOre)
+5/1/2015 3:37:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000128 (RuneEssence)
+5/1/2015 3:37:59 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x400000FD (GoldMetalOre)
+5/1/2015 3:38:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000105 (GoldMetalOre)
+5/1/2015 3:38:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000009E (RuneOre)
+5/1/2015 3:38:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000122 (CopperMetalOre)
+5/1/2015 3:38:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x400000FA (RuneEssence)
+5/1/2015 3:38:04 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000100 (RuneEssence)
+5/1/2015 3:38:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000120 (CopperMetalOre)
+5/1/2015 3:38:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011E (ClayOre)
+5/1/2015 3:38:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000121 (ClayOre)
+5/1/2015 3:38:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011F (ClayOre)
+5/1/2015 3:38:12 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000131 (Item)
+5/1/2015 3:40:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000102 (SilverMetalOre)
+5/1/2015 3:40:04 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000123 (IronMetalOre)
+5/1/2015 3:40:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000125 (TinOre)
+5/1/2015 3:40:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:12 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000012E (IronMetalOre)
+5/1/2015 3:40:13 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:15 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000122 (AdamantiteOre)
+5/1/2015 3:40:16 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:18 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000105 (GoldMetalOre)
+5/1/2015 3:40:20 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:21 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000128 (CopperMetalOre)
+5/1/2015 3:40:23 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:24 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000104 (RuneEssence)
+5/1/2015 3:40:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:28 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000121 (ClayOre)
+5/1/2015 3:40:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:32 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000124 (MithrilOre)
+5/1/2015 3:40:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:37 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000120 (CopperMetalOre)
+5/1/2015 3:40:40 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:42 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000129 (ClayOre)
+5/1/2015 3:40:44 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:46 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000012A (GoldMetalOre)
+5/1/2015 3:40:47 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:40:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011E (CoalOre)
+5/1/2015 3:43:12 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:43:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000133 (ClayOre)
+5/1/2015 3:43:50 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 3:43:52 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000136 (GoldMetalOre)
+5/1/2015 5:21:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'm remove'
+5/1/2015 5:21:22 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000123 (CoalOre)
+5/1/2015 5:21:22 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000103 (RuneOre)
+5/1/2015 5:21:23 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000101 (RuneEssence)
+5/1/2015 5:21:24 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000102 (GoldMetalOre)
+5/1/2015 5:21:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000133 (ClayOre)
+5/1/2015 5:21:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000124 (SilverMetalOre)
+5/1/2015 5:21:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000135 (TinOre)
+5/1/2015 5:21:27 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x400000FE (SilverMetalOre)
+5/1/2015 5:21:28 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011F (AdamantiteOre)
+5/1/2015 5:21:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000134 (IronMetalOre)
+5/1/2015 5:21:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000121 (MithrilOre)
+5/1/2015 5:21:32 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000132 (CopperMetalOre)
+5/1/2015 5:21:33 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000131 (CoalOre)
+5/1/2015 5:21:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011E (ClayOre)
+5/1/2015 5:21:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000130 (GoldMetalOre)
+5/1/2015 5:21:37 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000105 (CopperMetalOre)
+5/1/2015 5:21:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000104 (CoalOre)
+5/1/2015 5:24:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 5:24:11 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'OrePresent' of 0x40000106 (AdamantiteRocks) to 'True'
+5/1/2015 5:24:39 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 5:24:44 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'OrePresent' of 0x4000010E (RuneRocks) to 'True'
+5/1/2015 5:24:50 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get hue'
+5/1/2015 5:25:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+5/1/2015 5:25:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get hue'
+5/1/2015 5:25:15 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 5:25:20 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'OrePresent' of 0x40000106 (AdamantiteRocks) to 'True'
+5/1/2015 5:25:22 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get hue'
+5/1/2015 5:25:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+5/1/2015 5:26:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+5/1/2015 5:26:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 5:26:30 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') set property 'OrePresent' of 0x4000010E (RuneRocks) to 'True'
+5/1/2015 5:26:32 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'M Tele'
+5/1/2015 5:27:26 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:27:29 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000012A (RuneEssence)
+5/1/2015 5:27:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:27:33 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000129 (AdamantiteOre)
+5/1/2015 5:27:35 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:27:36 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000013A (RuneOre)
+5/1/2015 5:27:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:27:40 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000127 (SilverMetalOre)
+5/1/2015 5:27:42 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:27:45 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000126 (GoldMetalOre)
+5/1/2015 5:27:47 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:27:49 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000013B (GoldMetalOre)
+5/1/2015 5:27:51 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:27:53 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000128 (MithrilOre)
+5/1/2015 5:27:55 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:27:57 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000125 (CoalOre)
+5/1/2015 5:27:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:28:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000013C (IronMetalOre)
+5/1/2015 5:28:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'props '
+5/1/2015 5:36:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'm remove'
+5/1/2015 5:37:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000147 (MithrilOre)
+5/1/2015 5:37:01 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000120 (AdamantiteOre)
+5/1/2015 5:37:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000104 (GoldMetalOre)
+5/1/2015 5:37:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000105 (CoalOre)
+5/1/2015 5:37:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000149 (SilverMetalOre)
+5/1/2015 5:37:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000103 (RuneEssence)
+5/1/2015 5:37:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000146 (AdamantiteOre)
+5/1/2015 5:37:09 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011F (ClayOre)
+5/1/2015 5:37:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011E (CopperMetalOre)
+5/1/2015 5:37:13 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000148 (GoldMetalOre)
+5/1/2015 5:37:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000143 (SilverMetalOre)
+5/1/2015 5:37:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000102 (RuneOre)
+5/1/2015 5:37:21 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000121 (IronMetalOre)
+5/1/2015 5:37:23 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000123 (TinOre)
+5/1/2015 5:38:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add mithri'
+5/1/2015 5:38:38 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3044, 665, 0) in Trammel: "MithrilPickaxe"
+5/1/2015 5:38:38 PM: 192.168.1.122: Serials: 0x40000126; 
+5/1/2015 5:38:46 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'get hue'
+5/1/2015 5:39:53 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'm remove'
+5/1/2015 5:39:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000113 (DragonPickaxe)
+5/1/2015 5:40:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000111 (AdamantitePickaxe)
+5/1/2015 5:40:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000126 (MithrilPickaxe)
+5/1/2015 5:40:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011B (MithrilPickaxe)
+5/1/2015 5:40:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011C (RunePickaxe)
+5/1/2015 5:40:23 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 5:40:25 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011D (SteelPickaxe)
+5/1/2015 5:40:31 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add steelpi'
+5/1/2015 5:40:34 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3045, 665, 0) in Trammel: "SteelPickaxe"
+5/1/2015 5:40:34 PM: 192.168.1.122: Serials: 0x40000127; 
+5/1/2015 7:54:53 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 7:54:56 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000012B (AdamantiteOre)
+5/1/2015 7:54:58 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 7:54:59 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000129 (GoldMetalOre)
+5/1/2015 7:55:00 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 7:55:02 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000124 (SilverMetalOre)
+5/1/2015 7:55:03 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 7:55:04 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000125 (CoalOre)
+5/1/2015 7:55:05 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 7:55:07 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011E (IronMetalOre)
+5/1/2015 7:55:08 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 7:55:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011C (ClayOre)
+5/1/2015 7:55:11 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 7:55:14 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011F (RuneOre)
+5/1/2015 7:55:16 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 7:55:17 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x40000128 (MithrilOre)
+5/1/2015 7:55:19 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'remove '
+5/1/2015 7:55:21 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') deleting 0x4000011D (AdamantiteOre)
+5/1/2015 8:20:06 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') used command 'add amuleto'
+5/1/2015 8:20:10 PM: 192.168.1.122: Owner 0x1 "Lokai" ('Lokai') building at (3045, 665, 0) in Trammel: "AmuletOfGlory"
+5/1/2015 8:20:10 PM: 192.168.1.122: Serials: 0x40000124; 
