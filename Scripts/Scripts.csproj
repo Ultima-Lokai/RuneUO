@@ -1422,12 +1422,14 @@
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\QuestClean.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\Steward.cs" />
     <Compile Include="Custom Systems\Mine\Mannequin\Mannequin.cs" />
-    <Compile Include="Custom Systems\Mine\Runescape System\Amulets.cs" />
-    <Compile Include="Custom Systems\Mine\Runescape System\Gems.cs" />
-    <Compile Include="Custom Systems\Mine\Runescape System\MiningRocks.cs" />
-    <Compile Include="Custom Systems\Mine\Runescape System\RunescapeOre.cs" />
-    <Compile Include="Custom Systems\Mine\Runescape System\RunescapePickaxe.cs" />
-    <Compile Include="Custom Systems\Mine\Runescape System\RunescapeWeapon.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Items\Crafting\Amulets.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Core\Enums.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Items\Crafting\Gems.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Items\Mining\MiningRocks.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Items\Mining\RunescapeOre.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Items\Weapons\RunescapePickaxe.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Items\Weapons\RunescapeWeapon.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Skills\SkillUtilities.cs" />
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\FeluccaTravelMap.cs" />
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\IlshenarTravelMap.cs" />
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\MalasTravelMap.cs" />
@@ -1438,7 +1440,7 @@
     <Compile Include="Custom Systems\Mine\Shard Travel Maps\ShardTravelGump.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\SuperShardTravelGump.cs" />
     <Compile Include="Custom Systems\Mine\Individual Custom Scripts\VirtuesVicesGump.cs" />
-    <Compile Include="Custom Systems\Mine\Runescape System\RunescapeSystem.cs" />
+    <Compile Include="Custom Systems\Mine\Runescape System\Core\RunescapeUtilities.cs" />
     <Compile Include="Custom Systems\SearchImage.cs" />
     <Compile Include="Custom Systems\StaticExporter.cs" />
     <Compile Include="Custom Systems\VitaNex\Core\Build\CSharpCompiler.cs" />
@@ -5283,7 +5285,11 @@
     <None Include="Services\XMLSpawner\XMLSpawner Support\Container.cs.2.4" />
     <None Include="Services\XMLSpawner\XMLSpawner Support\Stealing.cs.2.4" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Custom Systems\Mine\Runescape System\Items\Smithing\" />
+    <Folder Include="Custom Systems\Mine\Runescape System\Items\Woodcutting\" />
+    <Folder Include="Custom Systems\Mine\Runescape System\Mobiles\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
     <VisualStudio AllowExistingFolder="true" />
