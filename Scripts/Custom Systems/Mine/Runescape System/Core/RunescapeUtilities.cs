@@ -29,6 +29,29 @@ namespace Server.Runescape
             }
             return 0;
         }
+        public static int Hue(Bars barType)
+        {
+            switch (barType)
+            {
+                case Bars.Adamantite:
+                    return 0x363;
+                case Bars.Steel:
+                    return 0x47F;
+                case Bars.Bronze:
+                    return 0x466;
+                case Bars.Gold:
+                    return 0x501;
+                case Bars.Iron:
+                    return 0x21F;
+                case Bars.Mithril:
+                    return 0x18A;
+                case Bars.Rune:
+                    return 0xBC;
+                case Bars.Silver:
+                    return 0x47E;
+            }
+            return 0;
+        }
         public static int Hue(Ores oreType)
         {
             switch (oreType)

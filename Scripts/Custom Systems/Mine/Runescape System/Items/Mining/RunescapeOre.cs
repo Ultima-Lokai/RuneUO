@@ -2,7 +2,7 @@
 
 namespace Server.Runescape
 {
-    public abstract class BaseRunescapeOre : Item
+    public abstract class RunescapeOre : Item
     {
         private Ores mOreType;
 
@@ -16,16 +16,16 @@ namespace Server.Runescape
             get { return Utilities.Hue(OreType); }
             set { base.Hue = value; }
         }
-        
 
-        public BaseRunescapeOre(Ores oreType)
+
+        public RunescapeOre(Ores oreType)
             : base(Utility.RandomBool() ? 0x19B9 : Utility.Random(4) + 0x19B7)
         {
             mOreType = oreType;
             Stackable = true;
         }
 
-        public BaseRunescapeOre(Serial serial)
+        public RunescapeOre(Serial serial)
             : base(serial)
         {
         }
@@ -56,7 +56,7 @@ namespace Server.Runescape
         }
     }
 
-    public class ClayOre : BaseRunescapeOre
+    public class ClayOre : RunescapeOre
     {
         [Constructable]
         public ClayOre() : base(Ores.Clay) { }
@@ -78,7 +78,7 @@ namespace Server.Runescape
         }
     }
 
-    public class RuneOre : BaseRunescapeOre
+    public class RuneOre : RunescapeOre
     {
         [Constructable]
         public RuneOre() : base(Ores.Rune) { }
@@ -100,7 +100,7 @@ namespace Server.Runescape
         }
     }
 
-    public class RuneEssence : BaseRunescapeOre
+    public class RuneEssence : RunescapeOre
     {
         [Constructable]
         public RuneEssence() : base(Ores.RuneEssence) { }
@@ -122,7 +122,7 @@ namespace Server.Runescape
         }
     }
 
-    public class AdamantiteOre : BaseRunescapeOre
+    public class AdamantiteOre : RunescapeOre
     {
         [Constructable]
         public AdamantiteOre() : base(Ores.Adamantite) { }
@@ -144,7 +144,7 @@ namespace Server.Runescape
         }
     }
 
-    public class MithrilOre : BaseRunescapeOre
+    public class MithrilOre : RunescapeOre
     {
         [Constructable]
         public MithrilOre() : base(Ores.Mithril) { }
@@ -166,7 +166,7 @@ namespace Server.Runescape
         }
     }
 
-    public class CoalOre : BaseRunescapeOre
+    public class CoalOre : RunescapeOre
     {
         [Constructable]
         public CoalOre() : base(Ores.Coal) { }
@@ -188,7 +188,7 @@ namespace Server.Runescape
         }
     }
 
-    public class GoldMetalOre : BaseRunescapeOre
+    public class GoldMetalOre : RunescapeOre
     {
         [Constructable]
         public GoldMetalOre() : base(Ores.Gold) { }
@@ -210,7 +210,7 @@ namespace Server.Runescape
         }
     }
 
-    public class SilverMetalOre : BaseRunescapeOre
+    public class SilverMetalOre : RunescapeOre
     {
         [Constructable]
         public SilverMetalOre() : base(Ores.Silver) { }
@@ -232,7 +232,7 @@ namespace Server.Runescape
         }
     }
 
-    public class IronMetalOre : BaseRunescapeOre
+    public class IronMetalOre : RunescapeOre
     {
         [Constructable]
         public IronMetalOre() : base(Ores.Iron) { }
@@ -254,7 +254,7 @@ namespace Server.Runescape
         }
     }
 
-    public class TinOre : BaseRunescapeOre
+    public class TinOre : RunescapeOre
     {
         [Constructable]
         public TinOre() : base(Ores.Tin) { }
@@ -276,7 +276,7 @@ namespace Server.Runescape
         }
     }
 
-    public class CopperMetalOre : BaseRunescapeOre
+    public class CopperMetalOre : RunescapeOre
     {
         [Constructable]
         public CopperMetalOre() : base(Ores.Copper) { }

@@ -3,7 +3,7 @@ using Server.Items;
 
 namespace Server.Runescape
 {
-    public class RunescapePickaxe : RunescapeWeapon
+    public abstract class RunescapePickaxe : RunescapeMeleeWeapon
     {
         public RunescapePickaxe(RuneWeaponType weaponType)
             : base(weaponType, 0xE86)

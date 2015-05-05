@@ -49,7 +49,7 @@ namespace Server.Runescape
             }
         }
 
-        public abstract BaseRunescapeOre GetOre();
+        public abstract RunescapeOre GetOre();
 
         public void GiveOreTo(Mobile from)
         {
@@ -256,7 +256,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new ClayOre();
         }
@@ -281,7 +281,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new RuneOre();
         }
@@ -306,7 +306,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new RuneEssence();
         }
@@ -331,7 +331,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new AdamantiteOre();
         }
@@ -356,7 +356,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new MithrilOre();
         }
@@ -381,7 +381,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new CoalOre();
         }
@@ -406,7 +406,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new GoldMetalOre();
         }
@@ -431,7 +431,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new SilverMetalOre();
         }
@@ -456,7 +456,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new IronMetalOre();
         }
@@ -481,7 +481,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new TinOre();
         }
@@ -506,7 +506,7 @@ namespace Server.Runescape
             int version = reader.ReadInt();
         }
 
-        public override BaseRunescapeOre GetOre()
+        public override RunescapeOre GetOre()
         {
             return new CopperMetalOre();
         }

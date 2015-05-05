@@ -1,0 +1,6 @@
+C:\Ultima\RuneUO\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Ultima\RuneUO\ServUO.exe.config
+C:\Ultima\RuneUO\Server\obj\Debug\ServUO.exe
+C:\Ultima\RuneUO\Server\obj\Debug\ServUO.pdb
+C:\Ultima\RuneUO\ServUO.exe
+C:\Ultima\RuneUO\ServUO.pdb

@@ -47,7 +47,7 @@ namespace VitaNex
 			CommandUtility.Register("ExportCliloc", AccessLevel.Administrator, ExportCommand);
 		}
 
-		private static void CSInvoke()
+		public static void Initialize()
 		{
 			var tables = new List<ClilocTable>(Tables.Values);
 
@@ -70,11 +70,13 @@ namespace VitaNex
 
 							if (!File.Exists(stub))
 							{
+                                Console.WriteLine("WARNING: {0} not found!", file);
 								//CSOptions.ToConsole("WARNING: {0} not found!", file);
 								//noFind = true;
 								return;
 							}
 
+                            Console.WriteLine("SUCCESS: {0} processed!", file);
 							kvp.Value.Load(new FileInfo(stub));
 						}));
 

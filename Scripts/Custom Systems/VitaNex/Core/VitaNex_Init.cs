@@ -63,12 +63,12 @@ namespace VitaNex
 			}
 
 
-			#if !MONO
+			#if MONO
 			// Someone moved VitaNex from Scripts/VitaNex to Scripts/Custom Systems/VitaNex/Core
 			//  but this path was not updated... does this cause problems on Windows?  --Sith
 			var root = FindRootDirectory("Scripts/VitaNex");
 			#else
-			var root = new DirectoryInfo(Core.BaseDirectory + @"/Scripts/Custom Systems/VitaNex/Core");
+			var root = new DirectoryInfo(Core.BaseDirectory + @"\Scripts\Custom Systems\VitaNex\Core");
 			#endif
 			
 			if (root == null || !root.Exists)
