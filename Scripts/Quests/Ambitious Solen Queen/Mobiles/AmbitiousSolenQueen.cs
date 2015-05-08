@@ -15,6 +15,13 @@ namespace Server.Engines.Quests.Ambitious
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (AmbitiousQueenQuest); }
+        }
+
+        public override bool DoesOffer { get { return true; } }
+
         public abstract bool RedSolen { get; }
         public override bool DisallowAllMoves
         {

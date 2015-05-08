@@ -14,6 +14,11 @@ namespace Server.Engines.Quests.Necro
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof(DarkTidesQuest); }
+        }
+
         public override void InitBody()
         {
             this.Body = 0x94;

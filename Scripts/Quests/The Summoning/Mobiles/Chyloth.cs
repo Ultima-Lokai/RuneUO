@@ -28,6 +28,11 @@ namespace Server.Engines.Quests.Doom
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (TheSummoningQuest); }
+        }
+
         public Chyloth(Serial serial)
             : base(serial)
         {

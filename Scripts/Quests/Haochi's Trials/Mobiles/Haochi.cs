@@ -59,7 +59,7 @@ namespace Server.Engines.Quests.Samurai
         {
             QuestSystem qs = player.Quest;
 
-            if (qs is HaochisTrialsQuest)
+            if (qs.GetType() == ParentQuestSystem)
             {
                 if (HaochisTrialsQuest.HasLostHaochisKatana(player))
                 {
@@ -182,6 +182,11 @@ namespace Server.Engines.Quests.Samurai
             base.Deserialize(reader);
 
             int version = reader.ReadInt();
+        }
+
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (HaochisTrialsQuest); }
         }
     }
 }

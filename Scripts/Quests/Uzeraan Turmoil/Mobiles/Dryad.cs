@@ -25,6 +25,11 @@ namespace Server.Engines.Quests.Haven
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (UzeraanTurmoilQuest); }
+        }
+
         public override bool IsActiveVendor
         {
             get

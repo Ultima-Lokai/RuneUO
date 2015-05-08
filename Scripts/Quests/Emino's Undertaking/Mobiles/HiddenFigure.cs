@@ -24,6 +24,11 @@ namespace Server.Engines.Quests.Ninja
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (EminosUndertakingQuest); }
+        }
+
         [CommandProperty(AccessLevel.GameMaster)]
         public int Message
         {

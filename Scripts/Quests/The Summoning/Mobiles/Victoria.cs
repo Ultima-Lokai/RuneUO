@@ -19,6 +19,13 @@ namespace Server.Engines.Quests.Doom
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (TheSummoningQuest); }
+        }
+
+        public override bool DoesOffer { get { return true; } }
+
         public override int TalkNumber
         {
             get

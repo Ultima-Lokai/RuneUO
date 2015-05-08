@@ -17,6 +17,11 @@ namespace Server.Engines.Quests.Samurai
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (HaochisTrialsQuest); }
+        }
+
         public override int TalkNumber
         {
             get

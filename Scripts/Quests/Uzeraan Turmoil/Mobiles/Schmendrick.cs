@@ -18,6 +18,11 @@ namespace Server.Engines.Quests.Haven
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (UzeraanTurmoilQuest); }
+        }
+
         public override void InitBody()
         {
             this.InitStats(100, 100, 25);

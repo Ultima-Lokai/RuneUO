@@ -16,6 +16,13 @@ namespace Server.Engines.Quests.Zento
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (TerribleHatchlingsQuest); }
+        }
+
+        public override bool DoesOffer { get { return true; } }
+
         public override void InitBody()
         {
             this.InitStats(100, 100, 25);

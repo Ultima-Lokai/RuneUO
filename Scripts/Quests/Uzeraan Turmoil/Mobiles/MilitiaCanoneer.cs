@@ -19,6 +19,11 @@ namespace Server.Engines.Quests.Haven
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (UzeraanTurmoilQuest); }
+        }
+
         [CommandProperty(AccessLevel.GameMaster)]
         public bool Active
         {

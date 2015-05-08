@@ -14,6 +14,11 @@ namespace Server.Engines.Quests.Hag
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (WitchApprenticeQuest); }
+        }
+
         public override void InitBody()
         {
             this.Body = 0x4A;

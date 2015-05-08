@@ -27,6 +27,13 @@ namespace Server.Engines.Quests.Matriarch
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (SolenMatriarchQuest); }
+        }
+
+        public override bool DoesOffer { get { return true; } }
+
         public override void CheckMorph()
         {          
         }

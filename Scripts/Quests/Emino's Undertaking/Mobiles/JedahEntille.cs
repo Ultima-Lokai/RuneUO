@@ -17,6 +17,11 @@ namespace Server.Engines.Quests.Ninja
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (EminosUndertakingQuest); }
+        }
+
         public override int TalkNumber
         {
             get

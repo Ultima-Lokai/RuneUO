@@ -17,6 +17,13 @@ namespace Server.Engines.Quests.Hag
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof (WitchApprenticeQuest); }
+        }
+
+        public override bool DoesOffer { get { return true; } }
+
         public override bool ClickTitle
         {
             get

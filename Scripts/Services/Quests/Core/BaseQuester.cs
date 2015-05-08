@@ -42,6 +42,10 @@ namespace Server.Engines.Quests
         {
         }
 
+        public abstract Type ParentQuestSystem { get; }
+
+        public virtual bool DoesOffer { get { return false; } }
+
         public override void CheckMorph()
         {
             // Don't morph me!
