@@ -23,8 +23,9 @@ namespace Server.Runescape
         public string Refuse { get; set; }
         public string Complete { get; set; }
         public string Uncomplete { get; set; }
+		public string QuestType { get; set; }
 
-        public QuestHolder(string name, string description, string mobileName)
+        public QuestHolder(string name, string description, string mobileName, string questType)
         {
             Name = name;
             Description = description;
@@ -34,13 +35,15 @@ namespace Server.Runescape
             Refuse = "";
             Complete = "";
             Uncomplete = "";
+			QuestType = questType;
         }
 
-        public QuestHolder(object name, object description, object startMobile)
+        public QuestHolder(object name, object description, object startMobile, string questType)
         {
             oName = name;
             oDescription = description;
             oStartMobile = startMobile;
+			QuestType = questType;
         }
     }
 
@@ -91,7 +94,7 @@ namespace Server.Runescape
                         object name = questSystem.Name;
                         object offer = questSystem.OfferMessage;
                         BaseQuester quester = findQuester(quest);
-                        QuestHolders.Add(new QuestHolder(name, offer, quester));
+                        QuestHolders.Add(new QuestHolder(name, offer, quester, "System"));
                     }
                     catch
                     {
@@ -113,7 +116,7 @@ namespace Server.Runescape
                                 object name = baseQuest.Title;
                                 object desc = baseQuest.Description;
                                 MondainQuester quester = baseQuest.StartingMobile;
-                                QuestHolders.Add(new QuestHolder(name, desc, quester));
+                                QuestHolders.Add(new QuestHolder(name, desc, quester, "Base"));
                             }
                             catch
                             {
@@ -201,6 +204,12 @@ namespace Server.Runescape
 
         private int mPage;
         private int mIndex;
+		bool _active;
+		bool _completed;
+		bool _notstarted;
+		bool _questsystem;
+		bool _basequest;
+		string _searchphrase;
 
         public QuestSearch(Mobile from, PlayerMobile mobile)
             : this(from, mobile, 1)
@@ -220,9 +229,15 @@ namespace Server.Runescape
             mPlayer = mobile;
             mPage = page;
             mIndex = index;
+			_active = active;
+			_completed = completed;
+			_notstarted = notstarted;
+			_questsystem = basequests;
+			_basequest = questsystems;
+			_searchphrase = searchphrase;
 
             int y = 75;
-            List<QuestHolder> holders = searchphrase == "" ? Quests.QuestHolders : FilteredHolders(searchphrase);
+            List<QuestHolder> holders = FilteredHolders(searchphrase, active, completed, notstarted, basequests, questsystems);
 
             AddPage(0);
 
@@ -281,36 +296,95 @@ namespace Server.Runescape
                 int maxpages = (int)Math.Ceiling((decimal)holders.Count/8);
                 int highestindex = holders.Count/mPage >= 8 ? 8 : holders.Count - ((maxpages - 1)*8);
                 if (mPage > 1)
-                    AddButton(6, 246, 250, 251, 15, GumpButtonType.Reply, 0);
+                    AddButton(6, 246, 250, 251, 15, GumpButtonType.Reply, 0); // Go back 1 page
                 if (mPage < maxpages)
-                    AddButton(6, 460, 252, 253, 16, GumpButtonType.Reply, 0);
+                    AddButton(6, 460, 252, 253, 16, GumpButtonType.Reply, 0); // Go forward 1 page
 
                 for (int x = 0; x < highestindex; x++)
                 {
-                    bool now = (mPage - 1)*8 + x == mIndex && details;
+					int loopindex = (mPage - 1)*8 + x;
+                    bool now = (loopindex == mIndex && details);
                     y += 30;
                     if (now)
                         AddImage(35, y, 2154);
                     else
-                        AddButton(35, y, 2152, 2152, 1000 + ((mPage - 1) * 8 + x), GumpButtonType.Reply, 0);
+                        AddButton(35, y, 2152, 2152, 1000 + loopindex, GumpButtonType.Reply, 0); // Show details
                     AddLabel(69, y + 5, 0x384, holders[(mPage - 1)*8 + x].Name);
                 }
             }
         }
 
-        private List<QuestHolder> FilteredHolders(string search)
+        private List<QuestHolder> FilteredHolders(string search, bool active, bool completed, bool notstarted, bool basequests, bool questsystems)
         {
             List<QuestHolder> holders = new List<QuestHolder>();
-            foreach (var quest in Quests.QuestHolders)
-            {
-                if (!holders.Contains(quest) && quest.Description.Contains(search)) holders.Add(quest);
-                if (!holders.Contains(quest) && quest.Name.Contains(search)) holders.Add(quest);
-                if (!holders.Contains(quest) && quest.MobileName != null && quest.MobileName.Contains(search))
-                    holders.Add(quest);
-            }
+			if (search.Length > 0)
+			{
+				foreach (var quest in Quests.QuestHolders)
+				{
+					if (!holders.Contains(quest) && 
+						(quest.Description.Contains(search) || quest.Name.Contains(search) || 
+						(quest.MobileName != null && quest.MobileName.Contains(search))))
+						holders.Add(quest);
+				}
+			}
+			else
+				holders = Quests.QuestHolders;
+			List<QuestHolder> playerHolders = new List<QuestHolder>();
+			if (!active || !completed || !notstarted)
+			{
+				if (active)
+				{
+					foreach (var quest in holders)
+					{
+						if (!playerHolders.Contains(quest) && IsActiveQuest(mPlayer, quest)) playerHolders.Add(quest);
+					}
+				}
+				if (completed)
+				{
+					foreach (var quest in holders)
+					{
+						if (!playerHolders.Contains(quest) && IsCompletedQuest(mPlayer, quest)) playerHolders.Add(quest);
+					}
+				}
+				if (notstarted)
+				{
+					foreach (var quest in holders)
+					{
+						if (!playerHolders.Contains(quest) && 
+							(!IsActiveQuest(mPlayer, quest) && !IsCompletedQuest(mPlayer, quest))) playerHolders.Add(quest);
+					}
+				}
+			}
+			else
+				playerHolders = holders;
+			holders = new List<QuestHolder>();
+			if (basequests)
+			{
+				foreach (var quest in playerHolders)
+				{
+					if (!holders.Contains(quest) && quest.QuestType == "Base") holders.Add(quest);
+				}
+			}
+			if (questsystems)
+			{
+				foreach (var quest in playerHolders)
+				{
+					if (!holders.Contains(quest) && quest.QuestType == "System") holders.Add(quest);
+				}
+			}
 
             return holders;
         }
+		
+		private bool IsActiveQuest(PlayerMobile pm, QuestHolder quest)
+		{
+			return true;
+		}
+		
+		private bool IsCompletedQuest(PlayerMobile pm, QuestHolder quest)
+		{
+			return true;
+		}
 
         public void AddHtml(int x, int y, int width, int height, string text, int color, bool background,
             bool scrollbar)
@@ -363,14 +437,35 @@ namespace Server.Runescape
                     questsystem = true;
                     mFrom.SendMessage("At least one of the bottom 2 checkboxes must be checked.");
                 }
-                mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage, mIndex, X, Y, active, completed, notstarted,
+                mFrom.SendGump(new QuestSearch(mFrom, mPlayer, 1, 0, X, Y, active, completed, notstarted,
                     basequest, questsystem, false, searchtext));
             }
 
             // Select Player
-            if (info.ButtonID == 5)
+            else if (info.ButtonID == 5)
             {
 
+            }
+
+            // Go Back 1 Page
+            else if (info.ButtonID == 15)
+            {
+                mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage - 1, 0, X, Y,
+					_active, _completed, _notstarted, _questsystem, _basequest, false, _searchphrase));
+            }
+
+            // Go Forward 1 Page
+            else if (info.ButtonID == 16)
+            {
+                mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage + 1, 0, X, Y, 
+					_active, _completed, _notstarted, _questsystem, _basequest, false, _searchphrase));
+            }
+
+            // Go Forward 1 Page
+            else if (info.ButtonID > 999)
+            {
+                mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage, info.ButtonID - 1000, X, Y, 
+					_active, _completed, _notstarted, _questsystem, _basequest, true, _searchphrase));
             }
         }
     }
