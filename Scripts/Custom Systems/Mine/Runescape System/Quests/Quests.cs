@@ -3,52 +3,77 @@ using System.Collections.Generic;
 using Server.Engines.Quests;
 using VitaNex;
 using Server.Commands;
-using Server.Custom;
 using Server.Gumps;
 using Server.Items;
 using Server.Mobiles;
 using Server.Network;
+using Server.Targeting;
 
 namespace Server.Runescape
 {
     public class QuestHolder
     {
-        public object oName { get; set; }
-        public object oDescription { get; set; }
-        public object oStartMobile { get; set; }
-
         public string Name { get; set; }
         public string Description { get; set; }
         public string MobileName { get; set; }
-        public string Refuse { get; set; }
-        public string Complete { get; set; }
-        public string Uncomplete { get; set; }
-		public string QuestType { get; set; }
+        public string QuestType { get; set; }
+        public string Objectives { get; set; }
+        public Type TheType { get; set; }
 
-        public QuestHolder(string name, string description, string mobileName, string questType)
+        public QuestHolder(Type theType, string name, string description, string mobileName, string questType, string objectives)
         {
+            TheType = theType;
             Name = name;
             Description = description;
-            if (mobileName == null) MobileName = "";
-            else
-                MobileName = mobileName;
-            Refuse = "";
-            Complete = "";
-            Uncomplete = "";
-			QuestType = questType;
-        }
-
-        public QuestHolder(object name, object description, object startMobile, string questType)
-        {
-            oName = name;
-            oDescription = description;
-            oStartMobile = startMobile;
-			QuestType = questType;
+            MobileName = mobileName;
+            QuestType = questType;
+            Objectives = objectives;
         }
     }
 
     public static class Quests
     {
+        public static bool DoesContain<TObj>(this TObj[] list, TObj obj)
+        {
+            return IndexOf(list, obj) != -1;
+        }
+
+        public static int IndexOf<TObj>(this IEnumerable<TObj> list, TObj obj)
+        {
+            return IndexOf(list, obj, null);
+        }
+
+        public static int IndexOf<TObj>(this IEnumerable<TObj> list, TObj obj, Func<TObj, bool> match)
+        {
+            if (list == null)
+            {
+                return -1;
+            }
+
+            int index = -1;
+            bool found = false;
+
+            foreach (var o in list)
+            {
+                ++index;
+
+                if (match != null && match(o))
+                {
+                    found = true;
+                    break;
+                }
+
+                if (obj == null || (!ReferenceEquals(o, obj) && !o.Equals(obj)))
+                {
+                    continue;
+                }
+
+                found = true;
+                break;
+            }
+
+            return found ? index : -1;
+        }
 
         public static List<QuestHolder> QuestHolders; 
          
@@ -57,48 +82,79 @@ namespace Server.Runescape
             CommandUtility.Register("ClilocQuest", AccessLevel.Administrator, CQCommand);
         }
 
-        private static BaseQuester findQuester(Type quest)
+        private static Mobile findQuester(Type quest)
         {
-            BaseQuester q = null;
-            foreach (var quester in questStarters)
+            foreach (var mobile in questStarters)
             {
-                if (quester.ParentQuestSystem == quest)
+                if (mobile is BaseQuester && ((BaseQuester) mobile).ParentQuestSystem == quest) return mobile;
+                try
                 {
-                    q = quester;
+                    if (mobile is MondainQuester && ((MondainQuester) mobile).Quests != null)
+                    {
+                        if (((MondainQuester)mobile).Quests.DoesContain(quest)) return mobile;
+                    }
+                }
+                catch
+                {
                 }
             }
-            return q;
+            
+            return null;
         }
 
-        private static List<BaseQuester> questStarters;
+        private static List<Mobile> questStarters;
 
         private static void CQCommand(CommandEventArgs e)
         {
-            questStarters = new List<BaseQuester>();
-            foreach (var mobile in World.Mobiles.Values)
+            questStarters = new List<Mobile>();
+            foreach (var mobiletype in World.Mobiles.Values)
             {
-                if (mobile is BaseQuester && ((BaseQuester) mobile).DoesOffer)
+                if (!questStarters.Contains(mobiletype) &&
+                    (mobiletype is BaseQuester && ((BaseQuester) mobiletype).DoesOffer) ||
+                    (mobiletype is MondainQuester && ((MondainQuester) mobiletype).Quests != null))
                 {
-                    questStarters.Add((BaseQuester)mobile);
+                    questStarters.Add(mobiletype);
                 }
             }
 
             QuestHolders = new List<QuestHolder>();
             foreach (var quest in QuestSystem.QuestTypes)
             {
-                QuestSystem questSystem = (QuestSystem)Activator.CreateInstance(quest);
+                QuestSystem questSystem = (QuestSystem) Activator.CreateInstance(quest);
                 if (questSystem != null)
                 {
-                    try
-                    {
-                        object name = questSystem.Name;
-                        object offer = questSystem.OfferMessage;
-                        BaseQuester quester = findQuester(quest);
-                        QuestHolders.Add(new QuestHolder(name, offer, quester, "System"));
-                    }
-                    catch
-                    {
-                    }
+                    string name = Lookup(questSystem.Name);
+                    string offermessage;
+                    try { offermessage = Lookup(questSystem.OfferMessage); }
+                    catch { offermessage = "Unknown Offer Message"; }
+                    string mobileName = "Unknown Mobile"; 
+                    string objectives = "";
+
+                    if (questSystem.TypeReferenceTable != null)
+                        foreach (var objType in questSystem.TypeReferenceTable)
+                        {
+                            try
+                            {
+                                if (objType.IsSubclassOf(typeof (QuestObjective)))
+                                {
+                                    QuestObjective objective = (QuestObjective) Activator.CreateInstance(objType);
+                                    if (objective != null)
+                                        objectives += Lookup(objective.Message) + "\n\n";
+                                    else
+                                    {
+                                        Console.WriteLine("QuestObjective null for {0}", objType);
+                                    }
+                                }
+                            }
+                            catch
+                            {
+                                objectives += string.Format("Unknown Objective for {0}\n\n", objType);
+                            }
+                        }
+                    Mobile quester = findQuester(quest);
+                    if (quester != null) mobileName = quester.Name;
+
+                    QuestHolders.Add(new QuestHolder(quest, name, offermessage, mobileName, "System", objectives));
                 }
             }
 
@@ -111,84 +167,76 @@ namespace Server.Runescape
                         BaseQuest baseQuest = (BaseQuest)Activator.CreateInstance(type);
                         if (baseQuest != null)
                         {
+                            string name = Lookup(baseQuest.Title);
+                            string description = Lookup(baseQuest.Description);
+                            string mobileName = "Unknown Mobile";
+                            string objectives = "";
                             try
                             {
-                                object name = baseQuest.Title;
-                                object desc = baseQuest.Description;
-                                MondainQuester quester = baseQuest.StartingMobile;
-                                QuestHolders.Add(new QuestHolder(name, desc, quester, "Base"));
+                                foreach (var objective in baseQuest.Objectives)
+                                {
+                                    if (objective != null)
+                                        objectives += GetObjective(objective);
+                                }
                             }
                             catch
                             {
+                                objectives = "Unknown Objectives";
                             }
+                            Mobile quester = baseQuest.StartingMobile;
+                            if (quester == null) quester = findQuester(type);
+                            if (quester != null) mobileName = quester.Name;
+
+                            QuestHolders.Add(new QuestHolder(type, name, description, mobileName, "Base", objectives));
                         }
                     }
                 }
             }
 
-            Console.WriteLine("There are {0} generic quests in the system!", QuestHolders.Count);
-            int count = 0;
-            foreach (var quest in QuestHolders)
-            {
-                try
-                {
-                    Mobile startMobile = null;
-                    ClilocInfo cliloc;
-
-                    if (quest.oName is int)
-                    {
-                        cliloc = Clilocs.Tables[ClilocLNG.ENU].Lookup((int)quest.oName);
-                        if (cliloc != null)
-                        {
-                            quest.Name = cliloc.Text;
-                        }
-                        else
-                        {
-                            quest.Name = ((int) quest.oName).ToString();
-                        }
-                    }
-                    else if (quest.oName is string)
-                    {
-                        quest.Name = (string) quest.oName;
-                    }
-
-                    if (quest.oDescription is int)
-                    {
-                        cliloc = Clilocs.Tables[ClilocLNG.ENU].Lookup((int) quest.oDescription);
-                        if (cliloc != null)
-                        {
-                            quest.Description = cliloc.Text;
-                        }
-                        else
-                        {
-                            quest.Description = ((int) quest.oDescription).ToString();
-                        }
-                    }
-                    else if (quest.oDescription is string)
-                    {
-                        quest.Description = (string) quest.oDescription;
-                    }
-
-                    if (quest.oStartMobile is MondainQuester)
-                    {
-                        startMobile = (MondainQuester) quest.oStartMobile;
-                        quest.MobileName = startMobile.Name;
-                    }
-
-                    else if (quest.oStartMobile is BaseQuester)
-                    {
-                        startMobile = (BaseQuester)quest.oStartMobile;
-                        quest.MobileName = startMobile.Name;
-                    }
-                }
-                catch
-                {
-                    count++;
-                }
-            }
-            Console.WriteLine("There were {0} errors reading quests.", count);
+            Console.WriteLine("There were {0} quests found.", QuestHolders.Count);
             PlayerMobile pm = (PlayerMobile) e.Mobile;
+
             e.Mobile.SendGump(new QuestSearch(e.Mobile, pm));
+        }
+
+        private static string GetObjective(BaseObjective objective)
+        {
+            string objectivestring = "";
+            if (objective is SlayObjective)
+                objectivestring += "Slay " + ((SlayObjective)objective).Name + "\n";
+            else if (objective is ObtainObjective)
+                objectivestring += "Obtain " + ((ObtainObjective)objective).Name + "\n";
+            else if (objective is EscortObjective)
+                objectivestring += ((EscortObjective)objective).Region + " Escort\n";
+            else if (objective is DeliverObjective)
+                objectivestring += "Deliver " + ((DeliverObjective)objective).DeliveryName + "\n";
+            else if (objective is ApprenticeObjective)
+                objectivestring += ((ApprenticeObjective)objective).Skill + " Apprenticeship\n";
+
+            return objectivestring;
+        }
+
+        private static string Lookup(object o)
+        {
+            string lookup = "";
+
+            if (o is int)
+            {
+                ClilocInfo cliloc = Clilocs.Tables[ClilocLNG.ENU].Lookup((int)o);
+                if (cliloc != null)
+                {
+                    lookup = cliloc.Text;
+                }
+                else
+                {
+                    lookup = ((int)o).ToString();
+                }
+            }
+            else if (o is string)
+            {
+                lookup = (string)o;
+            }
+            return lookup;
         }
     }
 
@@ -204,6 +252,7 @@ namespace Server.Runescape
 
         private int mPage;
         private int mIndex;
+        private Mobile _QuestMobile;
 		bool _active;
 		bool _completed;
 		bool _notstarted;
@@ -235,6 +284,7 @@ namespace Server.Runescape
 			_questsystem = basequests;
 			_basequest = questsystems;
 			_searchphrase = searchphrase;
+            _QuestMobile = null;
 
             int y = 75;
             List<QuestHolder> holders = FilteredHolders(searchphrase, active, completed, notstarted, basequests, questsystems);
@@ -250,6 +300,7 @@ namespace Server.Runescape
             {
                 AddBackground(251, 0, 504, 500, 5054);
                 AddAlphaRegion(252, 1, 502, 498);
+                AddDetail(holders[mIndex]);
             }
 
             if (mPlayer != null)
@@ -280,7 +331,7 @@ namespace Server.Runescape
 
             y += 30;
             AddCheck(5, y, 0xD2, 0xD3, basequests, 10);
-            AddLabel(28, y, 0x384, "Base Quest");
+            AddLabel(28, y, 0x455, "Base Quest");
 
             y += 30;
             AddImageTiled(5, y, 200, 19, 0xBBC);
@@ -309,7 +360,8 @@ namespace Server.Runescape
                         AddImage(35, y, 2154);
                     else
                         AddButton(35, y, 2152, 2152, 1000 + loopindex, GumpButtonType.Reply, 0); // Show details
-                    AddLabel(69, y + 5, 0x384, holders[(mPage - 1)*8 + x].Name);
+                    AddLabel(69, y + 5, holders[loopindex].QuestType == "System" ? 0x384 : 0x455,
+                        holders[loopindex].Name);
                 }
             }
         }
@@ -321,10 +373,10 @@ namespace Server.Runescape
 			{
 				foreach (var quest in Quests.QuestHolders)
 				{
-					if (!holders.Contains(quest) && 
-						(quest.Description.Contains(search) || quest.Name.Contains(search) || 
-						(quest.MobileName != null && quest.MobileName.Contains(search))))
-						holders.Add(quest);
+				    if (!holders.Contains(quest) &&
+				        (Insensitive.Contains(quest.Description, search) || Insensitive.Contains(quest.Name, search) ||
+				         (quest.MobileName != null && Insensitive.Contains(quest.MobileName, search))))
+				        holders.Add(quest);
 				}
 			}
 			else
@@ -337,7 +389,7 @@ namespace Server.Runescape
 					foreach (var quest in holders)
 					{
 						if (!playerHolders.Contains(quest) && IsActiveQuest(mPlayer, quest)) playerHolders.Add(quest);
-					}
+                    }
 				}
 				if (completed)
 				{
@@ -372,18 +424,48 @@ namespace Server.Runescape
 					if (!holders.Contains(quest) && quest.QuestType == "System") holders.Add(quest);
 				}
 			}
+            if (active)
+            {
+                List<Item> items = XmlQuest.FindXmlQuest(mPlayer);
+                if (items != null && items.Count > 0)
+                {
+                    foreach (var item in items)
+                    {
+                        if (item is XmlQuestHolder)
+                        {
+                            XmlQuestHolder xml = (XmlQuestHolder)item;
+                            holders.Add(new QuestHolder(xml.GetType(), xml.Name, xml.Description1, "XML", "Xml",
+                                xml.Objective1));
+                        }
+                    }
+                }
+            }
 
             return holders;
         }
 		
-		private bool IsActiveQuest(PlayerMobile pm, QuestHolder quest)
+		private bool IsActiveQuest(PlayerMobile pm, QuestHolder holder)
 		{
-			return true;
+		    if (pm.Quests != null)
+		    {
+		        foreach (var quest in pm.Quests)
+		        {
+		            if (quest.GetType() == holder.TheType) return true;
+		        }
+		    }
+			return false;
 		}
 		
-		private bool IsCompletedQuest(PlayerMobile pm, QuestHolder quest)
+		private bool IsCompletedQuest(PlayerMobile pm, QuestHolder holder)
 		{
-			return true;
+		    if (pm.DoneQuests != null)
+		    {
+		        foreach (var quest in pm.DoneQuests)
+		        {
+		            if (quest.QuestType == holder.TheType) return true;
+		        }
+		    }
+			return false;
 		}
 
         public void AddHtml(int x, int y, int width, int height, string text, int color, bool background,
@@ -399,23 +481,38 @@ namespace Server.Runescape
 
         private void AddDetail(QuestHolder quest)
         {
-            AddLabel(90, 75, GreenHue, "Title");
-            AddHtml(90, 95, 185, 50, quest.Name, 0x20, true, true);
-            AddLabel(280, 75, GreenHue, "Mobile Name");
-            AddHtml(280, 95, 185, 50, quest.MobileName, 0x20, true, true);
-            AddLabel(90, 150, GreenHue, "Description");
-            AddHtml(90, 170, 380, 100, quest.Description, 0x20, true, true);
-            AddLabel(90, 275, GreenHue, "Refuse");
-            AddHtml(90, 295, 380, 100, quest.Refuse, 0x20, true, true);
-            AddLabel(90, 400, GreenHue, "Complete");
-            AddHtml(90, 420, 380, 100, quest.Complete, 0x20, true, true);
-            AddLabel(90, 525, GreenHue, "Uncomplete");
-            AddHtml(90, 545, 380, 100, quest.Uncomplete, 0x20, true, true);
+            AddLabel(275, 5, GreenHue, quest.QuestType == "Base" ? "Base Quest Title" 
+                : quest.QuestType == "System" ? "Quest System Name"
+                : quest.QuestType == "Xml" ? "Xml Quest Name" 
+                : "Unknown Quest Type");
+            AddHtml(255, 25, 225, 30, quest.Name, 0x20, true, false);
+            AddLabel(515, 5, GreenHue, "Mobile Name");
+            AddHtml(485, 25, 200, 30, quest.MobileName, 0x20, true, false);
+            _QuestMobile = FindMobile(quest.MobileName);
+            if (_QuestMobile != null)
+            {
+                AddButton(690, 25, 1210, 1210, 25, GumpButtonType.Reply, 0);
+                AddLabel(706, 25, GreenHue, "Go");
+            }
+            AddLabel(275, 60, GreenHue, quest.QuestType == "System" ? "Offer Message" : "Description");
+            AddHtml(255, 80, 490, 130, quest.Description, 0x20, true, true);
+            AddLabel(275, 215, GreenHue, "Objectives");
+            AddHtml(255, 235, 490, 260, quest.Objectives, 0x20, true, true);
+        }
+
+        private Mobile FindMobile(string name)
+        {
+            foreach (var mobile in World.Mobiles.Values)
+            {
+                if (mobile.Name == name && (mobile is BaseQuester || mobile is MondainQuester)
+                    && mobile.Map != Map.Internal)
+                    return mobile;
+            }
+            return null;
         }
 
         public override void OnResponse(NetState sender, RelayInfo info)
         {
-
             // Apply Filters
             if (info.ButtonID == 4)
             {
@@ -429,13 +526,13 @@ namespace Server.Runescape
                 if (mPlayer != null && !active && !completed && !notstarted)
                 {
                     active = true;
-                    mFrom.SendMessage("At least one of the top 3 checkboxes must be checked.");
+                    mFrom.SendMessage("At least one of the top 3 boxes must be checked.");
                 }
 
                 if (!questsystem && !basequest)
                 {
                     questsystem = true;
-                    mFrom.SendMessage("At least one of the bottom 2 checkboxes must be checked.");
+                    mFrom.SendMessage("At least one of the 2 quest types must be checked.");
                 }
                 mFrom.SendGump(new QuestSearch(mFrom, mPlayer, 1, 0, X, Y, active, completed, notstarted,
                     basequest, questsystem, false, searchtext));
@@ -444,7 +541,7 @@ namespace Server.Runescape
             // Select Player
             else if (info.ButtonID == 5)
             {
-
+                mFrom.Target = new PlayerTarget();
             }
 
             // Go Back 1 Page
@@ -461,11 +558,51 @@ namespace Server.Runescape
 					_active, _completed, _notstarted, _questsystem, _basequest, false, _searchphrase));
             }
 
-            // Go Forward 1 Page
+            // Teleport to the Quest Mobile
+            else if (info.ButtonID == 25)
+            {
+                try
+                {
+                    mFrom.MoveToWorld(_QuestMobile.Location, _QuestMobile.Map);
+                    mFrom.PlaySound(0x1FE);
+                    mFrom.SendMessage("You have been transported to the Quest Mobile.");
+                    mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage, info.ButtonID - 1000, X, Y,
+                        _active, _completed, _notstarted, _questsystem, _basequest, true, _searchphrase));
+                }
+                catch
+                {
+                    mFrom.SendMessage("There was an error transporting to the Quest Mobile.");
+                    mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage, info.ButtonID - 1000, X, Y,
+                        _active, _completed, _notstarted, _questsystem, _basequest, true, _searchphrase));
+                }
+            }
+
+            // Show details
             else if (info.ButtonID > 999)
             {
                 mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage, info.ButtonID - 1000, X, Y, 
 					_active, _completed, _notstarted, _questsystem, _basequest, true, _searchphrase));
+            }
+        }
+
+        private class PlayerTarget : Target
+        {
+            public PlayerTarget() : base(3, false, TargetFlags.None)
+            {
+            }
+
+            protected override void OnTarget(Mobile from, object targeted)
+            {
+                if (targeted is PlayerMobile)
+                {
+                    PlayerMobile pm = (PlayerMobile) targeted;
+                    from.SendGump(new QuestSearch(from, pm));
+                }
+                else
+                {
+                    from.SendMessage("Invalid target. Please select a Player, or target yourself.");
+                    from.Target = new PlayerTarget();
+                }
             }
         }
     }

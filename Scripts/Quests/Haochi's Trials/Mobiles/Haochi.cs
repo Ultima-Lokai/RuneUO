@@ -17,6 +17,16 @@ namespace Server.Engines.Quests.Samurai
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof(HaochisTrialsQuest); }
+        }
+
+        public override bool DoesOffer
+        {
+            get { return true; }
+        }
+
         public override int TalkNumber
         {
             get
@@ -182,11 +192,6 @@ namespace Server.Engines.Quests.Samurai
             base.Deserialize(reader);
 
             int version = reader.ReadInt();
-        }
-
-        public override Type ParentQuestSystem
-        {
-            get { return typeof (HaochisTrialsQuest); }
         }
     }
 }

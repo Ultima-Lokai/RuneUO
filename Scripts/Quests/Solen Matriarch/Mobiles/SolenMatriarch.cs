@@ -27,11 +27,6 @@ namespace Server.Engines.Quests.Matriarch
         {
         }
 
-        public override Type ParentQuestSystem
-        {
-            get { return typeof (SolenMatriarchQuest); }
-        }
-
         public override bool DoesOffer { get { return true; } }
 
         public override void CheckMorph()
@@ -306,6 +301,11 @@ namespace Server.Engines.Quests.Matriarch
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof(SolenMatriarchQuest); }
+        }
+
         public override bool RedSolen
         {
             get
@@ -338,6 +338,11 @@ namespace Server.Engines.Quests.Matriarch
         public BlackSolenMatriarch(Serial serial)
             : base(serial)
         {
+        }
+
+        public override Type ParentQuestSystem
+        {
+            get { return typeof(SolenMatriarchQuest); }
         }
 
         public override bool RedSolen

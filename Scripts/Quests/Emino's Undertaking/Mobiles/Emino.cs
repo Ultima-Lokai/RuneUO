@@ -23,6 +23,11 @@ namespace Server.Engines.Quests.Ninja
             get { return typeof (EminosUndertakingQuest); }
         }
 
+        public override bool DoesOffer
+        {
+            get { return true; }
+        }
+
         public override int TalkNumber
         {
             get

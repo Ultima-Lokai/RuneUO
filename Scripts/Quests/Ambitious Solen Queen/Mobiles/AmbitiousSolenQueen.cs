@@ -15,11 +15,6 @@ namespace Server.Engines.Quests.Ambitious
         {
         }
 
-        public override Type ParentQuestSystem
-        {
-            get { return typeof (AmbitiousQueenQuest); }
-        }
-
         public override bool DoesOffer { get { return true; } }
 
         public abstract bool RedSolen { get; }
@@ -190,6 +185,11 @@ namespace Server.Engines.Quests.Ambitious
         {
         }
 
+        public override Type ParentQuestSystem
+        {
+            get { return typeof(AmbitiousQueenQuest); }
+        }
+
         public override bool RedSolen
         {
             get
@@ -222,6 +222,11 @@ namespace Server.Engines.Quests.Ambitious
         public BlackAmbitiousSolenQueen(Serial serial)
             : base(serial)
         {
+        }
+
+        public override Type ParentQuestSystem
+        {
+            get { return typeof(AmbitiousQueenQuest); }
         }
 
         public override bool RedSolen
