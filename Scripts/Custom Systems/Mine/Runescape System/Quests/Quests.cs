@@ -566,13 +566,13 @@ namespace Server.Runescape
                     mFrom.MoveToWorld(_QuestMobile.Location, _QuestMobile.Map);
                     mFrom.PlaySound(0x1FE);
                     mFrom.SendMessage("You have been transported to the Quest Mobile.");
-                    mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage, info.ButtonID - 1000, X, Y,
+                    mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage, mIndex, X, Y,
                         _active, _completed, _notstarted, _questsystem, _basequest, true, _searchphrase));
                 }
                 catch
                 {
                     mFrom.SendMessage("There was an error transporting to the Quest Mobile.");
-                    mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage, info.ButtonID - 1000, X, Y,
+                    mFrom.SendGump(new QuestSearch(mFrom, mPlayer, mPage, mIndex, X, Y,
                         _active, _completed, _notstarted, _questsystem, _basequest, true, _searchphrase));
                 }
             }

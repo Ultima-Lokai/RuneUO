@@ -69,3 +69,9 @@ Scripts/Output/Scripts.CS.hash
 Scripts/Output/Scripts.CS.dll
 *.xml
 *.log
+Logs/Commands/Owner/Lokai.log
+Saves/Accounts/accounts.xml
+Scripts/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Scripts/Output/Scripts.CS.dll
+Server/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Scripts/Output/Scripts.CS.dll
