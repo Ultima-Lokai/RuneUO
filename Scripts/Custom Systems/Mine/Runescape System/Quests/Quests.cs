@@ -11,7 +11,7 @@ using Server.Targeting;
 
 namespace Server.Runescape
 {
-    public class QuestHolder
+    public class QuestStringHolder
     {
         public string Name { get; set; }
         public string Description { get; set; }
@@ -20,7 +20,7 @@ namespace Server.Runescape
         public string Objectives { get; set; }
         public Type TheType { get; set; }
 
-        public QuestHolder(Type theType, string name, string description, string mobileName, string questType, string objectives)
+        public QuestStringHolder(Type theType, string name, string description, string mobileName, string questType, string objectives)
         {
             TheType = theType;
             Name = name;
@@ -75,7 +75,7 @@ namespace Server.Runescape
             return found ? index : -1;
         }
 
-        public static List<QuestHolder> QuestHolders; 
+        public static List<QuestStringHolder> QuestHolders; 
          
         public static void Initialize()
         {
@@ -117,7 +117,7 @@ namespace Server.Runescape
                 }
             }
 
-            QuestHolders = new List<QuestHolder>();
+            QuestHolders = new List<QuestStringHolder>();
             foreach (var quest in QuestSystem.QuestTypes)
             {
                 QuestSystem questSystem = (QuestSystem) Activator.CreateInstance(quest);
@@ -154,7 +154,7 @@ namespace Server.Runescape
                     Mobile quester = findQuester(quest);
                     if (quester != null) mobileName = quester.Name;
 
-                    QuestHolders.Add(new QuestHolder(quest, name, offermessage, mobileName, "System", objectives));
+                    QuestHolders.Add(new QuestStringHolder(quest, name, offermessage, mobileName, "System", objectives));
                 }
             }
 
@@ -187,7 +187,7 @@ namespace Server.Runescape
                             if (quester == null) quester = findQuester(type);
                             if (quester != null) mobileName = quester.Name;
 
-                            QuestHolders.Add(new QuestHolder(type, name, description, mobileName, "Base", objectives));
+                            QuestHolders.Add(new QuestStringHolder(type, name, description, mobileName, "Base", objectives));
                         }
                     }
                 }
@@ -287,7 +287,7 @@ namespace Server.Runescape
             _QuestMobile = null;
 
             int y = 75;
-            List<QuestHolder> holders = FilteredHolders(searchphrase, active, completed, notstarted, basequests, questsystems);
+            List<QuestStringHolder> holders = FilteredHolders(searchphrase, active, completed, notstarted, basequests, questsystems);
 
             AddPage(0);
 
@@ -366,9 +366,9 @@ namespace Server.Runescape
             }
         }
 
-        private List<QuestHolder> FilteredHolders(string search, bool active, bool completed, bool notstarted, bool basequests, bool questsystems)
+        private List<QuestStringHolder> FilteredHolders(string search, bool active, bool completed, bool notstarted, bool basequests, bool questsystems)
         {
-            List<QuestHolder> holders = new List<QuestHolder>();
+            List<QuestStringHolder> holders = new List<QuestStringHolder>();
 			if (search.Length > 0)
 			{
 				foreach (var quest in Quests.QuestHolders)
@@ -381,7 +381,7 @@ namespace Server.Runescape
 			}
 			else
 				holders = Quests.QuestHolders;
-			List<QuestHolder> playerHolders = new List<QuestHolder>();
+			List<QuestStringHolder> playerHolders = new List<QuestStringHolder>();
 			if (!active || !completed || !notstarted)
 			{
 				if (active)
@@ -409,7 +409,7 @@ namespace Server.Runescape
 			}
 			else
 				playerHolders = holders;
-			holders = new List<QuestHolder>();
+			holders = new List<QuestStringHolder>();
 			if (basequests)
 			{
 				foreach (var quest in playerHolders)
@@ -434,7 +434,7 @@ namespace Server.Runescape
                         if (item is XmlQuestHolder)
                         {
                             XmlQuestHolder xml = (XmlQuestHolder)item;
-                            holders.Add(new QuestHolder(xml.GetType(), xml.Name, xml.Description1, "XML", "Xml",
+                            holders.Add(new QuestStringHolder(xml.GetType(), xml.Name, xml.Description1, "XML", "Xml",
                                 xml.Objective1));
                         }
                     }
@@ -444,7 +444,7 @@ namespace Server.Runescape
             return holders;
         }
 		
-		private bool IsActiveQuest(PlayerMobile pm, QuestHolder holder)
+		private bool IsActiveQuest(PlayerMobile pm, QuestStringHolder holder)
 		{
 		    if (pm.Quests != null)
 		    {
@@ -456,7 +456,7 @@ namespace Server.Runescape
 			return false;
 		}
 		
-		private bool IsCompletedQuest(PlayerMobile pm, QuestHolder holder)
+		private bool IsCompletedQuest(PlayerMobile pm, QuestStringHolder holder)
 		{
 		    if (pm.DoneQuests != null)
 		    {
@@ -479,7 +479,7 @@ namespace Server.Runescape
             return String.Format("<BASEFONT COLOR=#{0:X6}>{1}</BASEFONT>", color, text);
         }
 
-        private void AddDetail(QuestHolder quest)
+        private void AddDetail(QuestStringHolder quest)
         {
             AddLabel(275, 5, GreenHue, quest.QuestType == "Base" ? "Base Quest Title" 
                 : quest.QuestType == "System" ? "Quest System Name"

@@ -139,7 +139,7 @@ namespace Server.Mobiles
 		public static int seccount;
 
 		// sector hashtable for each map
-		private static Dictionary<Sector, List<XmlSpawner>>[] GlobalSectorTable = new Dictionary<Sector, List<XmlSpawner>>[6];
+		private static Dictionary<Sector, List<XmlSpawner>>[] GlobalSectorTable = new Dictionary<Sector, List<XmlSpawner>>[33];
 
 		#endregion
 

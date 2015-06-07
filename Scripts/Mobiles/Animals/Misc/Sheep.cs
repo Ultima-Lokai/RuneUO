@@ -5,7 +5,7 @@ using Server.Network;
 namespace Server.Mobiles
 {
     [CorpseName("a sheep corpse")]
-    public class Sheep : BaseCreature, ICarvable
+    public class Sheep : BaseCreature, ICarvable, IShearable
     {
         private DateTime m_NextWoolTime;
         [Constructable]
@@ -89,6 +89,17 @@ namespace Server.Mobiles
                 return (this.Body == 0xCF ? 3 : 0);
             }
         }
+
+        public bool Shear(Mobile from, Shears shears)
+        {
+            if (Wool > 0)
+            {
+                Carve(from, shears);
+                return true;
+            }
+            return false;
+        }
+
         public void Carve(Mobile from, Item item)
         {
             if (DateTime.UtcNow < this.m_NextWoolTime)
