@@ -89,30 +89,16 @@ namespace Server.Engines.Craft
             if (!typeofSpellScroll.IsAssignableFrom(item.ItemType)) //  not a scroll
             {
                 if (failed)
-                {
-                    if (lostMaterial)
-                        return 1044043; // You failed to create the item, and some of your materials are lost.
-                    else
-                        return 1044157; // You failed to create the item, but no materials were lost.
-                }
+                    return 1044043; // You failed to create the item, and some of your materials are lost.
                 else
-                {
-                    if (quality == 0)
-                        return 502785; // You were barely able to make this item.  It's quality is below average.
-                    else if (makersMark && quality == 2)
-                        return 1044156; // You create an exceptional quality item and affix your maker's mark.
-                    else if (quality == 2)
-                        return 1044155; // You create an exceptional quality item.
-                    else
-                        return 1044154; // You create the item.
-                }
+                    return 1044154; // You create the item.
             }
             else
             {
                 if (failed)
-                    return 501630; // You fail to inscribe the scroll, and the scroll is ruined.
+                    return 501630; // You fail to etch the spell to the token.
                 else
-                    return 501629; // You inscribe the spell and put the scroll in your backpack.
+                    return 501629; // You etch the spell and put the token in your backpack.
             }
         }
 
